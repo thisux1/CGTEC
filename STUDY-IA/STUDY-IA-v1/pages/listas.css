@@ -1,0 +1,106 @@
+/*Fonte normal*/
+@font-face 
+{
+    font-family: FonteNormal;
+    src: url(fonts/GlacialIndifference-Regular.otf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Fonte com negrito*/
+@font-face 
+{
+    font-family: FonteNegrito;
+    src: url(fonts/GlacialIndifference-Bold.otf) format(otf); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.boxSuperior 
+{
+    white-space: nowrap;
+    color: white;
+    background-image: linear-gradient(to right, #2328bd, #2c1e42);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 70px;
+}
+
+.imagem1
+{
+    display: inline-block; 
+    width: 8.5%; 
+    vertical-align: middle;
+    margin-right: 2%;
+
+}
+
+.links1 
+{
+    display: inline-block;  
+    vertical-align: middle;
+    margin-right: 4%;
+    font-size: 120%;
+    font-family: "FonteNormal", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.boxTitulo
+{
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    font-family: "FonteNormal", sans-serif;
+    font-size: 200%;
+    margin-left: 4%;
+}
+
+#imagemTitulo
+{
+    width: 10%;
+    height: 10%;
+    margin-top: 2.7%;
+    margin-left: -2%;
+}
+
+.checkbox-container 
+{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: "FonteNormal", sans-serif;
+    margin-left: 4.5%;
+}
+
+h2
+{
+    font-family: "FonteNormal", sans-serif;
+    margin-left: 3.5%;
+}
+
+.check-text
+{
+    text-decoration: none;
+    color: black;
+}
+
+.conteudo-container
+{
+    margin-top: -3%;
+}
+
+a {
+    color: black;
+    text-decoration: none; /* Remove o sublinhado por padrão */
+  }
+  
+  /* Aplica o estilo taxado ao link se a checkbox estiver marcada */
+  input[type="checkbox"]:checked ~ a {
+    text-decoration: line-through; /* Adiciona o risco no link */
+  }
+  

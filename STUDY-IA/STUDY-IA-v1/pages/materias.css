@@ -1,0 +1,91 @@
+/*Fonte normal*/
+@font-face 
+{
+    font-family: FonteNormal;
+    src: url(fonts/GlacialIndifference-Regular.otf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Fonte com negrito*/
+@font-face 
+{
+    font-family: FonteNegrito;
+    src: url(fonts/GlacialIndifference-Bold.otf) format(otf); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.boxSuperior 
+{
+    white-space: nowrap;
+    color: white;
+    background-image: linear-gradient(to right, #2328bd, #2c1e42);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 70px;
+}
+
+.imagem1
+{
+    display: inline-block; 
+    width: 8%; 
+    vertical-align: middle;
+    margin-right: 2%;
+}
+
+.links1 
+{
+    display: inline-block;  
+    vertical-align: middle;
+    margin-right: 4%;
+    font-size: 120%;
+    font-family: "FonteNormal", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/*Link da página*/
+#link-selecionado
+{
+    color: #5c9ae3;
+}
+
+/*Título*/
+h1
+{
+    font-size: 60px;
+    font-family: "FonteNormal", sans-serif;
+    margin-left: 80px;
+}
+
+.boxDisciplinas
+{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#iconFisica:hover
+{
+    width: 270px;
+    background-color: #e3e3e3;
+    border-radius: 15px;
+}
+
+#iconFisica
+{
+    width: 250px;
+}
+
+a
+{
+font-family: "FonteNormal", sans-serif;
+color: black;
+text-decoration: none;
+}

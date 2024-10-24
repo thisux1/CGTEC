@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios sobre Circuitos Elétricos</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios sobre Circuitos Elétricos Simples</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Qual é a corrente em um circuito onde a tensão é de 24 V e a resistência é de 12 Ω?
+        <br><br>
+        a) 1 A<br>
+        b) 2 A<br>
+        c) 3 A<br>
+        d) 4 A<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: b) 2 A
+            <br><br>
+            <b>Resolução:</b> 
+            Aplicando a Lei de Ohm: \( I = \frac{V}{R} = \frac{24}{12} = 2 A \).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Dois resistores de 6 Ω e 12 Ω estão conectados em série. Qual é a resistência equivalente?
+        <br><br>
+        a) 18 Ω<br>
+        b) 6 Ω<br>
+        c) 9 Ω<br>
+        d) 12 Ω<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: a) 18 Ω
+            <br><br>
+            <b>Resolução:</b> 
+            A resistência equivalente em série é \( R_t = R_1 + R_2 = 6 + 12 = 18 Ω \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Qual é a potência dissipada por um resistor de 10 Ω quando uma corrente de 2 A passa por ele?
+        <br><br>
+        a) 20 W<br>
+        b) 10 W<br>
+        c) 40 W<br>
+        d) 50 W<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: c) 40 W
+            <br><br>
+            <b>Resolução:</b> 
+            A potência dissipada é dada por \( P = I^2 \times R = 2^2 \times 10 = 40 W \).
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um circuito paralelo tem três resistores de 6 Ω cada. Qual é a resistência equivalente do circuito?
+        <br><br>
+        a) 2 Ω<br>
+        b) 18 Ω<br>
+        c) 3 Ω<br>
+        d) 12 Ω<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 2 Ω
+            <br><br>
+            <b>Resolução:</b> 
+            Em paralelo, a resistência equivalente é \( \frac{1}{R_t} = \frac{1}{6} + \frac{1}{6} + \frac{1}{6} \), o que resulta em \( R_t = 2 Ω \).
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Em um circuito de corrente contínua (CC), se a corrente total em um resistor é de 3 A e a resistência é de 4 Ω, qual é a tensão aplicada?
+        <br><br>
+        a) 12 V<br>
+        b) 1 V<br>
+        c) 8 V<br>
+        d) 16 V<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: a) 12 V
+            <br><br>
+            <b>Resolução:</b> 
+            Aplicando a Lei de Ohm: \( V = I \times R = 3 \times 4 = 12 V \).
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Se a potência dissipada em um resistor é de 60 W e a corrente que passa por ele é de 5 A, qual é a resistência do resistor?
+        <br><br>
+        a) 3 Ω<br>
+        b) 2 Ω<br>
+        c) 6 Ω<br>
+        d) 12 Ω<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: c) 6 Ω
+            <br><br>
+            <b>Resolução:</b> 
+            Usando \( P = I^2 \times R \), temos \( R = \frac{P}{I^2} = \frac{60}{5^2} = 6 Ω \).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Dois resistores de 10 Ω estão conectados em paralelo. Qual é a resistência equivalente?
+        <br><br>
+        a) 10 Ω<br>
+        b) 5 Ω<br>
+        c) 15 Ω<br>
+        d) 20 Ω<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: b) 5 Ω
+            <br><br>
+            <b>Resolução:</b> 
+            A resistência equivalente em paralelo é \( \frac{1}{R_t} = \frac{1}{10} + \frac{1}{10} \), resultando em \( R_t = 5 Ω \).
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Qual é a energia dissipada por um resistor de 5 Ω, onde uma corrente de 3 A passa por 10 segundos?
+        <br><br>
+        a) 225 J<br>
+        b) 450 J<br>
+        c) 675 J<br>
+        d) 90 J<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: c) 675 J
+            <br><br>
+            <b>Resolução:</b> 
+            A energia dissipada é \( E = P \times t = I^2 \times R \times t = 3^2 \times 5 \times 10 = 675 J \).
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Qual é a corrente total em um circuito paralelo com dois resistores de 20 Ω e 30 Ω, quando a tensão aplicada é de 60 V?
+        <br><br>
+        a) 1 A<br>
+        b) 2 A<br>
+        c) 4 A<br>
+        d) 5 A<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: d) 5 A
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, calculamos a resistência equivalente em paralelo e, em seguida, aplicamos \( I = \frac{V}{R_t} \) para encontrar a corrente total.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Em um circuito série, a tensão total é de 60 V. Se dois resistores de 10 Ω e 20 Ω estão conectados, qual é a tensão sobre o resistor de 20 Ω?
+        <br><br>
+        a) 20 V<br>
+        b) 30 V<br>
+        c) 40 V<br>
+        d) 50 V<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: c) 40 V
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a divisão proporcional de tensão, onde \( V_2 = V_t \times \frac{R_2}{R_t} = 60 \times \frac{20}{30} = 40 V \).
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

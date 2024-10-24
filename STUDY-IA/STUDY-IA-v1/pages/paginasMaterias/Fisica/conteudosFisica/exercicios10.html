@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Cinética e Potencial</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios sobre Energia Cinética e Potencial</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um bloco de 3 kg é levantado a uma altura de 5 m. Qual é a energia potencial gravitacional (Ep) do bloco em relação ao solo? (Considere g = 10 m/s²)
+        <br><br>
+        a) 15 J<br>
+        b) 30 J<br>
+        c) 150 J<br>
+        d) 300 J<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: c) 150 J
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ep = m \cdot g \cdot h = 3 \cdot 10 \cdot 5 = 150 \, J \)
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Um carro de 1.200 kg está viajando a uma velocidade de 20 m/s. Qual é a energia cinética (Ec) do carro?
+        <br><br>
+        a) 240.000 J<br>
+        b) 480.000 J<br>
+        c) 600.000 J<br>
+        d) 800.000 J<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 480.000 J
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ec = \frac{1}{2} m v^2 = \frac{1}{2} \cdot 1200 \cdot 20^2 = 480.000 \, J \)
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Um objeto de massa 4 kg é lançado verticalmente para cima com uma velocidade inicial de 10 m/s. Qual é a altura máxima (h) que ele atinge? (Despreze a resistência do ar)
+        <br><br>
+        a) 5 m<br>
+        b) 10 m<br>
+        c) 20 m<br>
+        d) 25 m<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: a) 5 m
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a conservação de energia:
+            \( Ec = Ep \rightarrow \frac{1}{2} m v^2 = mgh \)  
+            \( \frac{1}{2} \cdot 4 \cdot 10^2 = 4 \cdot 10 \cdot h \rightarrow 200 = 40h \rightarrow h = 5 \, m \)
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um corpo em queda livre parte de uma altura de 45 m. Qual é a velocidade do corpo ao atingir o solo? (Considere g = 10 m/s²)
+        <br><br>
+        a) 15 m/s<br>
+        b) 20 m/s<br>
+        c) 30 m/s<br>
+        d) 45 m/s<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: c) 30 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ec = Ep \rightarrow mgh = \frac{1}{2} mv^2 \)  
+            \( 45 \cdot 10 = \frac{1}{2} v^2 \rightarrow 450 = \frac{1}{2} v^2 \rightarrow v = 30 \, m/s \)
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um pêndulo de 0,5 kg oscila entre duas alturas. Se a energia total do pêndulo é de 20 J, qual é a energia potencial máxima quando o pêndulo atinge sua altura máxima?
+        <br><br>
+        a) 10 J<br>
+        b) 15 J<br>
+        c) 20 J<br>
+        d) 25 J<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: c) 20 J
+            <br><br>
+            <b>Resolução:</b> 
+            A energia total do pêndulo é a soma da energia cinética e potencial, e no ponto mais alto, toda a energia é potencial.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Um atleta salta de uma altura de 1,5 m. Qual é a energia potencial gravitacional do atleta no ponto mais alto? (Massa do atleta = 70 kg; considere g = 10 m/s²)
+        <br><br>
+        a) 70 J<br>
+        b) 105 J<br>
+        c) 140 J<br>
+        d) 150 J<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) 105 J
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ep = mgh = 70 \cdot 10 \cdot 1,5 = 1050 \, J \)
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um corpo de 2 kg é solto de uma altura de 10 m. Qual será sua velocidade ao atingir o solo, considerando que não há resistência do ar? (Considere g = 10 m/s²)
+        <br><br>
+        a) 10 m/s<br>
+        b) 14 m/s<br>
+        c) 20 m/s<br>
+        d) 30 m/s<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: c) 20 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ep = mgh = 2 \cdot 10 \cdot 10 = 200 \, J \)  
+            \( Ec = \frac{1}{2} mv^2 \rightarrow 200 = \frac{1}{2} \cdot 2 \cdot v^2 \rightarrow v = 20 \, m/s \)
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Um bloco de 5 kg desce uma rampa de 3 metros de altura. Qual é a energia potencial gravitacional do bloco no topo da rampa?
+        <br><br>
+        a) 30 J<br>
+        b) 50 J<br>
+        c) 150 J<br>
+        d) 200 J<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: c) 150 J
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ep = mgh = 5 \cdot 10 \cdot 3 = 150 \, J \)
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um bloco de 8 kg está em movimento a 5 m/s. Qual é a energia cinética do bloco?
+        <br><br>
+        a) 80 J<br>
+        b) 100 J<br>
+        c) 200 J<br>
+        d) 400 J<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: d) 200 J
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ec = \frac{1}{2} mv^2 = \frac{1}{2} \cdot 8 \cdot 5^2 = 100 \, J \)
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um objeto de 3 kg é solto de uma altura de 15 m. Qual é sua energia potencial no ponto de soltura?
+        <br><br>
+        a) 30 J<br>
+        b) 150 J<br>
+        c) 300 J<br>
+        d) 450 J<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: d) 450 J
+            <br><br>
+            <b>Resolução:</b> 
+            \( Ep = mgh = 3 \cdot 10 \cdot 15 = 450 \, J \)
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(num) {
+            var resposta = document.getElementById("resposta" + num);
+            resposta.style.display = resposta.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>

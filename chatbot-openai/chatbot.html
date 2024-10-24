@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="chatbot.css">
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+   <title>STUDY IA | Chatbot</title>
+</head>
+<body>
+
+   <div class="boxSuperior"> <!--Parte superior-->
+      <a href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/perfil.php"><img src="images/perfil2.png" class="imagem1"></a>
+      <span><a class="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/materias.php">Disciplínas</a></span>
+      <span><a class="links1" href="http://localhost/CGTEC/chatbot-openai/chatbot.html" id="link-selecionado">Peça ajuda a IA</a></span>
+      <span><a class="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/sobreSTUDYIA.php">Sobre o STUDY IA</a></span>
+      <span><a class="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/login.php">Sair</a></span>
+  </div>
+
+  <h1>Chatbot STUDY IA</h1>
+   <div id="chat-box"></div>
+   <input type="text" id="user-input" placeholder="Chat, corrija a minha redação..." />
+   <button onclick="sendMessage()">Enviar</button>
+
+   <script>
+      function sendMessage() {
+         const input = document.getElementById('user-input').value;
+         const chatBox = document.getElementById('chat-box');
+         
+         if (!input) return;
+         
+         chatBox.innerHTML += `<p><strong>Você:</strong> ${input}</p>`;
+
+         fetch('http://localhost:3000/api/chatbot', {
+            method: 'POST',
+            body: JSON.stringify({ message: input }),
+            headers: {
+               'Content-Type': 'application/json'
+            }
+         })
+         .then(response => response.json())
+         .then(data => {
+            chatBox.innerHTML += `<p><strong>Bot:</strong> ${data.response}</p>`;
+            chatBox.scrollTop = chatBox.scrollHeight; // Rolar para a última mensagem
+         })
+         .catch(error => {
+            chatBox.innerHTML += `<p>Erro ao enviar a mensagem.</p>`;
+            console.error('Erro:', error);
+         });
+
+         document.getElementById('user-input').value = '';
+      }
+   </script>
+
+</body>
+</html>

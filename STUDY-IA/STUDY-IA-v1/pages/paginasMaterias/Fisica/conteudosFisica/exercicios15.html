@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Calorimetria</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios de Calorimetria</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Qual é a definição de calor específico?
+        <br><br>
+        a) A quantidade de calor necessária para elevar a temperatura de 1 kg de uma substância em 1 °C.<br>
+        b) A quantidade de calor que uma substância pode liberar ao se resfriar.<br>
+        c) A quantidade de calor necessária para derreter 1 kg de uma substância.<br>
+        d) A quantidade de calor que uma substância libera quando solidifica.<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: a) A quantidade de calor necessária para elevar a temperatura de 1 kg de uma substância em 1 °C.
+            <br><br>
+            <b>Resolução:</b> O calor específico é uma propriedade física que indica a quantidade de calor que é necessária para aumentar a temperatura de uma unidade de massa de uma substância em uma unidade de temperatura.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Se um objeto de 2 kg tem um calor específico de 500 J/(kg·°C) e sua temperatura aumenta em 10 °C, qual é a quantidade de calor recebida pelo objeto?
+        <br><br>
+        a) 5000 J<br>
+        b) 1000 J<br>
+        c) 2000 J<br>
+        d) 10000 J<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: a) 5000 J
+            <br><br>
+            <b>Resolução:</b> Usamos a fórmula Q = mcΔT. Substituindo os valores: Q = 2 kg * 500 J/(kg·°C) * 10 °C = 10000 J.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Qual é a unidade de capacidade térmica?
+        <br><br>
+        a) J/(kg·°C)<br>
+        b) J/°C<br>
+        c) J/(kg·K)<br>
+        d) J<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: b) J/°C
+            <br><br>
+            <b>Resolução:</b> A capacidade térmica é definida como a quantidade de calor necessária para alterar a temperatura de um corpo em 1 °C. Portanto, sua unidade é J/°C.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um corpo de 3 kg tem um calor específico de 800 J/(kg·°C). Qual é a capacidade térmica total do corpo?
+        <br><br>
+        a) 2400 J/°C<br>
+        b) 800 J/°C<br>
+        c) 2400 J/K<br>
+        d) 9600 J/°C<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 2400 J/°C
+            <br><br>
+            <b>Resolução:</b> A capacidade térmica é dada por C = m * c. Assim, C = 3 kg * 800 J/(kg·°C) = 2400 J/°C.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Se um bloco de cobre (calor específico = 385 J/(kg·°C)) de 0,5 kg é aquecido de 25 °C a 75 °C, quanto calor foi fornecido?
+        <br><br>
+        a) 9600 J<br>
+        b) 3850 J<br>
+        c) 960 J<br>
+        d) 1925 J<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: c) 960 J
+            <br><br>
+            <b>Resolução:</b> Utilizando a fórmula Q = mcΔT, temos Q = 0,5 kg * 385 J/(kg·°C) * (75 °C - 25 °C) = 960 J.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Qual é a fórmula para calcular a quantidade de calor (Q) absorvido ou liberado por um corpo?
+        <br><br>
+        a) Q = mcΔT<br>
+        b) Q = mΔT/c<br>
+        c) Q = cΔT/m<br>
+        d) Q = ΔT/mc<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: a) Q = mcΔT
+            <br><br>
+            <b>Resolução:</b> A fórmula Q = mcΔT é a correta para calcular a quantidade de calor absorvido ou liberado, onde m é a massa, c é o calor específico e ΔT é a variação de temperatura.
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Qual é o calor específico da água?
+        <br><br>
+        a) 1000 J/(kg·°C)<br>
+        b) 4184 J/(kg·°C)<br>
+        c) 2000 J/(kg·°C)<br>
+        d) 2500 J/(kg·°C)<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: b) 4184 J/(kg·°C)
+            <br><br>
+            <b>Resolução:</b> O calor específico da água é 4184 J/(kg·°C), o que a torna uma substância com alta capacidade de armazenar calor.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Se um corpo tem uma capacidade térmica de 500 J/°C, qual é a sua massa se o calor específico do material é 2500 J/(kg·°C)?
+        <br><br>
+        a) 0,2 kg<br>
+        b) 2 kg<br>
+        c) 0,5 kg<br>
+        d) 1 kg<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 2 kg
+            <br><br>
+            <b>Resolução:</b> A capacidade térmica é dada por C = m * c. Assim, m = C / c = 500 J/°C / 2500 J/(kg·°C) = 0,2 kg.
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um líquido tem um calor específico de 2000 J/(kg·°C). Se 1 kg do líquido é aquecido de 20 °C a 80 °C, qual é a quantidade de calor absorvida?
+        <br><br>
+        a) 120000 J<br>
+        b) 140000 J<br>
+        c) 200000 J<br>
+        d) 80000 J<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: a) 120000 J
+            <br><br>
+            <b>Resolução:</b> Usando Q = mcΔT, temos Q = 1 kg * 2000 J/(kg·°C) * (80 °C - 20 °C) = 120000 J.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        O que acontece com a temperatura de um corpo durante uma mudança de fase?
+        <br><br>
+        a) A temperatura continua a aumentar<br>
+        b) A temperatura diminui<br>
+        c) A temperatura permanece constante<br>
+        d) Não ocorre mudança de temperatura<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: c) A temperatura permanece constante
+            <br><br>
+            <b>Resolução:</b> Durante uma mudança de fase, como fusão ou vaporização, a temperatura do corpo permanece constante enquanto ocorre a absorção ou liberação de calor.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(num) {
+            const resposta = document.getElementById(`resposta${num}`);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

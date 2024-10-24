@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas das Questões de MUV</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Movimento Uniforme Variado (MUV)</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        (UFPA) Um ponto material parte do repouso em movimento uniformemente variado e, após percorrer 12 m, está
+        animado de uma velocidade escalar de 6,0 m/s. A aceleração escalar do ponto material, em m/s², vale:
+        <br><br>
+        a) 1,5.<br>
+        b) 1,0.<br>
+        c) 2,5.<br>
+        d) 2,0.<br>
+        e) n.d.a.<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: d) 2,0.<br>
+            <b>Resolução:</b> Usando a equação de Torricelli \(v^2 = v_0^2 + 2a\Delta s\), temos \(6^2 = 0^2 + 2 \cdot a \cdot 12\).<br>
+            Resolvendo: \(36 = 24a \Rightarrow a = \frac{36}{24} = 1,5 \, \text{m/s}^2\).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        (PUC-RS) Muitos acidentes acontecem nas estradas porque o motorista não consegue frear seu carro antes de
+        colidir com o que está à sua frente. Analisando as características técnicas, fornecidas por uma revista
+        especializada, encontra-se a informação de que um determinado carro consegue diminuir sua velocidade, em média,
+        5,0 m/s a cada segundo. Se a velocidade inicial desse carro for 90,0 km/h (25,0 m/s), a distância necessária
+        para ele conseguir parar será de, aproximadamente:
+        <br><br>
+        a) 18,5 m.<br>
+        b) 25,0 m.<br>
+        c) 31,5 m.<br>
+        d) 45,0 m.<br>
+        e) 62,5 m.<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: e) 62,5 m.<br>
+            <b>Resolução:</b> Usando a equação de Torricelli \(v^2 = v_0^2 + 2a\Delta s\), temos \(0 = (25)^2 + 2(-5)\Delta s\).<br>
+            Resolvendo: \(\Delta s = \frac{25^2}{10} = 62,5 \, \text{m}\).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        (Uern) Seja o gráfico da velocidade em função do tempo de um corpo em movimento retilíneo uniformemente variado
+        representado abaixo.
+        <br><br>
+        <img src="https://lh4.googleusercontent.com/KJzAvCc2DSuVLp162UPbQL1hTEReIpMlBRy_6Sf6oOTty-FjGSu_uXIAx0PcvXLHkiZgjMab9eeH6jTVXUexH7k1Oqrqp10C5adY-3nKpy3JT-_bZct4rCq6yTJuQC1e_13PE-rbi7SnDYYGGEnDsQ"
+            alt="Gráfico velocidade x tempo">
+        <br><br>
+        Considerando a posição inicial desse movimento igual a 46 m, então a posição do corpo no instante t = 8 s é:
+        <br><br>
+        a) 54 m.<br>
+        b) 62 m.<br>
+        c) 66 m.<br>
+        d) 74 m.<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: b) 62 m.<br>
+            <b>Resolução:</b> A área sob o gráfico velocidade x tempo representa o deslocamento. Calculando a área até \( t = 8 \, \text{s} \), temos um deslocamento de 16 m. Somando à posição inicial de 46 m, a posição final é \( 46 + 16 = 62 \, \text{m} \).
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        (FEI-SP) No movimento retilíneo uniformemente variado, com velocidade inicial nula, a distância percorrida é:
+        <br><br>
+        a) diretamente proporcional ao tempo de percurso.<br>
+        b) inversamente proporcional ao tempo de percurso.<br>
+        c) diretamente proporcional ao quadrado do tempo de percurso.<br>
+        d) inversamente proporcional ao quadrado do tempo de percurso.<br>
+        e) diretamente proporcional à velocidade.<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: c) diretamente proporcional ao quadrado do tempo de percurso.<br>
+            <b>Resolução:</b> A equação que rege o MUV é \(s = s_0 + v_0t + \frac{1}{2}at^2\). Se a velocidade inicial é nula, \(s = \frac{1}{2}at^2\), ou seja, a distância é proporcional ao quadrado do tempo.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        (UEL-PR) Um trem de 200 m de comprimento, com velocidade escalar constante de 60 km/h, gasta 36 s para
+        atravessar completamente uma ponte. A extensão da ponte, em metros, é de:
+        <br><br>
+        a) 200<br>
+        b) 400<br>
+        c) 500<br>
+        d) 600<br>
+        e) 800<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: c) 500 m.<br>
+            <b>Resolução:</b> A velocidade do trem em metros por segundo é \( \frac{60 \, \text{km/h}}{3,6} = 16,67 \, \text{m/s} \). A distância total percorrida é \(d = v \cdot t = 16,67 \cdot 36 = 600 \, \text{m}\). Subtraindo o comprimento do trem, a ponte tem 400 m de extensão.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        (FUVEST) Um veículo parte do repouso em movimento retilíneo e acelera com aceleração escalar constante e igual a
+        2,0 m/s². Pode-se dizer que sua velocidade escalar e a distância percorrida após 3,0 segundos, valem,
+        respectivamente:
+        <br><br>
+        a) 6,0 m/s e 9,0 m.<br>
+        b) 6,0 m/s e 18 m.<br>
+        c) 3,0 m/s e 12 m.<br>
+        d) 12 m/s e 35 m.<br>
+        e) 2,0 m/s e 12 m.<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Resposta: b) 6,0 m/s e 18 m.<br>
+            <b>Resolução:</b> Usamos \(v = v_0 + at\) para a velocidade: \(v = 0 + 2 \cdot 3 = 6 \, \text{m/s}\). Para a distância, usamos \(s = v_0t + \frac{1}{2}at^2 = \frac{1}{2} \cdot 2 \cdot 3^2 = 9 \cdot 2 = 18 \, \text{m}\).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        (UNEMAT-MT) Num acidente, o velocímetro de uma motocicleta registrava a velocidade de 72 km/h no instante
+        anterior à colisão. Supondo que o piloto estava à mesma velocidade que a moto no instante do acidente, isso
+        seria equivalente à queda livre em um prédio. Se a distância entre um piso e outro é 2,5 m, de qual andar o piloto teria de cair para alcançar tal velocidade?
+        <br><br>
+        a) 20º andar.<br>
+        b) 18º andar.<br>
+        c) 16º andar.<br>
+        d) 10º andar.<br>
+        e) 08º andar.<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Resposta: b) 18º andar.<br>
+            <b>Resolução:</b> A velocidade de 72 km/h equivale a 20 m/s. Na queda livre, \(v^2 = 2gh\). Assim, \(20^2 = 2 \cdot 10 \cdot h \Rightarrow h = 20 \, \text{m}\). Como a altura de cada andar é 2,5 m, \( \frac{20}{2,5} = 8 \text{andares}\).
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        (FAMP) Janaína foi da cidade A para a cidade B em 4 h. Sabendo que em metade desse tempo ela estava a uma
+        velocidade de 80 km/h e, na outra metade, a 100 km/h, qual é a distância entre as cidades A e B?
+        <br><br>
+        a) 400 km.<br>
+        b) 180 km.<br>
+        c) 200 km.<br>
+        d) 360 km.<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Resposta: d) 360 km.<br>
+            <b>Resolução:</b> Em 2 horas, Janaína percorreu \(80 \cdot 2 = 160 \, \text{km}\), e nas outras 2 horas, percorreu \(100 \cdot 2 = 200 \, \text{km}\). A distância total é \(160 + 200 = 360 \, \text{km}\).
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        (UECE) Analisando o movimento de subida e descida de um corpo que é lançado verticalmente no espaço próximo à
+        superfície da terra, sem considerar qualquer tipo de atrito, sobre a aceleração do corpo é correto afirmar que:
+        <br><br>
+        a) muda de sinal quando sua velocidade muda de sentido.<br>
+        b) é a mesma ao longo de todo o movimento.<br>
+        c) no ponto mais alto da trajetória é nula.<br>
+        d) é máxima quando o corpo está na iminência de tocar o solo.<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Resposta: b) é a mesma ao longo de todo o movimento.<br>
+            <b>Resolução:</b> A aceleração da gravidade permanece constante e igual a \(9,8 \, \text{m/s}^2\), independentemente da direção ou da posição do corpo.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        (FAMEMA) Uma formiga cortadeira, movendo-se a 8 cm/s, deixa a entrada do formigueiro em direção a uma folha que
+        está 8 m distante do ponto em que se encontrava. Para cortar essa folha, a formiga necessita de 40 s. Ao
+        retornar à entrada do formigueiro pelo mesmo caminho, a formiga desenvolve uma velocidade de 4 cm/s, por causa
+        do peso da folha e de uma brisa constante contra o seu movimento. O tempo total gasto pela formiga ao realizar a
+        sequência de ações descritas foi:
+        <br><br>
+        a) 340 s.<br>
+        b) 420 s.<br>
+        c) 260 s.<br>
+        d) 240 s.<br>
+        e) 200 s.<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Resposta: b) 420 s.<br>
+            <b>Resolução:</b> No caminho de ida: \( \frac{800}{8} = 100 \, \text{s}\); no caminho de volta: \( \frac{800}{4} = 200 \, \text{s} \); e mais os 40 segundos para cortar a folha, temos \(100 + 200 + 40 = 420 \, \text{s}\).
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

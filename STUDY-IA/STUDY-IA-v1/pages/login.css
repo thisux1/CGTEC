@@ -1,0 +1,136 @@
+/*Fonte normal*/
+@font-face 
+{
+    font-family: FonteNormal;
+    src: url(fonts/GlacialIndifference-Regular.otf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Fonte com negrito*/
+@font-face 
+{
+    font-family: FonteNegrito;
+    src: url(fonts/GlacialIndifference-Bold.otf) format(otf); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Body*/
+body 
+{
+    background-image: linear-gradient(to right, #2328bd, #2c1e42);
+}
+
+/*Parte superior*/
+.superior 
+{
+    white-space: nowrap;
+    color: white;
+}
+
+/*Imagem da parte superior*/
+.imagem 
+{
+    display: inline-block; 
+    width: 8%; 
+    vertical-align: middle;
+    margin-right: 2%;
+    margin-top: -25px;
+}
+
+/*Links da parte superior*/
+.link 
+{
+    margin-top: -40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+    font-size: 120%;
+    font-family: "FonteNormal", sans-serif;
+}
+
+/*Link da página*/
+#link-selecionado
+{
+    color: #5c9ae3;
+}
+
+/*Título e subtítulo*/
+.titulo-e-subTitulo
+{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/*Imagem do título*/
+.imagem2
+{
+    width: 70%; 
+}
+
+/*Título*/
+.titulo 
+{
+    font-family: "FonteNegrito", sans-serif;
+    font-size: 840%;
+}
+
+/*Subtítulo*/
+.subTitulo 
+{
+    font-family: "FonteNegrito", sans-serif;
+    font-size: 200%; 
+}
+
+/*Links*/
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*Formulário*/
+.boxLogin
+{
+    background: white;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+/*Campos nome e senha*/
+#campos
+{
+    border-radius: 10px;
+    padding: 13px;
+    border-color: #2c1e42;
+}
+
+/*Botão*/
+#submit
+{
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    width: 60%;
+    background-image: linear-gradient(to right, #2328bd, #2c1e42);
+    color: white;
+    cursor: pointer;
+}
+
+/*Labels*/
+#label
+{
+    font-family: "FonteNormal", sans-serif;
+    color: #6418c2;
+}

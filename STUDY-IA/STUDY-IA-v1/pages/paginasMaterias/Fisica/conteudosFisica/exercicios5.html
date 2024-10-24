@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Força de Atrito</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios sobre Força de Atrito</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um bloco de 5 kg está em repouso sobre uma superfície horizontal. O coeficiente de atrito estático entre o bloco e a superfície é 0,4. Qual é a força máxima que pode ser aplicada ao bloco sem que ele se mova? Considere g = 10 m/s².
+        <br><br>
+        a) 15 N<br>
+        b) 20 N<br>
+        c) 25 N<br>
+        d) 30 N<br>
+        e) 35 N<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: c) 20 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força de atrito máximo é dada por \( F_{atrito} = \mu_{est} \cdot N \). 
+            Onde \( N = m \cdot g = 5 \cdot 10 = 50 \, \text{N} \). Assim, \( F_{atrito} = 0,4 \cdot 50 = 20 \, \text{N} \).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Um carrinho de 10 kg está em movimento em uma superfície plana com coeficiente de atrito cinético de 0,2. Se o carrinho se move a uma velocidade constante, qual é a força de atrito que age sobre ele?
+        <br><br>
+        a) 5 N<br>
+        b) 10 N<br>
+        c) 15 N<br>
+        d) 20 N<br>
+        e) 25 N<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 20 N
+            <br><br>
+            <b>Resolução:</b> 
+            Para um movimento a velocidade constante, a força de atrito é igual à força aplicada. Assim, \( F_{atrito} = \mu_{cin} \cdot N \).
+            Onde \( N = m \cdot g = 10 \cdot 10 = 100 \, \text{N} \), então \( F_{atrito} = 0,2 \cdot 100 = 20 \, \text{N} \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Uma caixa de 15 kg é empurrada com uma força de 60 N ao longo de uma superfície horizontal. O coeficiente de atrito cinético entre a caixa e a superfície é 0,25. Qual é a aceleração da caixa? Considere g = 10 m/s².
+        <br><br>
+        a) 1 m/s²<br>
+        b) 2 m/s²<br>
+        c) 3 m/s²<br>
+        d) 4 m/s²<br>
+        e) 5 m/s²<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: c) 3 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A força de atrito é \( F_{atrito} = \mu_{cin} \cdot N = 0,25 \cdot (15 \cdot 10) = 37,5 \, \text{N} \).
+            A força resultante é \( F_{resultante} = F_{aplicada} - F_{atrito} = 60 - 37,5 = 22,5 \, \text{N} \).
+            Aceleração: \( a = \frac{F_{resultante}}{m} = \frac{22,5}{15} = 1,5 \, \text{m/s²} \).
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um carro de 1000 kg está se movendo sobre uma estrada plana. Se o coeficiente de atrito cinético entre os pneus e a estrada é 0,3, qual é a força de atrito que age sobre o carro quando ele está freando? Considere g = 10 m/s².
+        <br><br>
+        a) 300 N<br>
+        b) 400 N<br>
+        c) 500 N<br>
+        d) 600 N<br>
+        e) 700 N<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 300 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força de atrito é \( F_{atrito} = \mu_{cin} \cdot N = 0,3 \cdot (1000 \cdot 10) = 3000 \, \text{N} \).
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um bloco está em repouso em uma rampa inclinada de 30º. O coeficiente de atrito estático entre o bloco e a rampa é 0,5. Qual é a força de atrito que impede o bloco de escorregar? Considere g = 10 m/s².
+        <br><br>
+        a) 15 N<br>
+        b) 20 N<br>
+        c) 25 N<br>
+        d) 30 N<br>
+        e) 35 N<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: b) 25 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força normal é \( N = mg \cos(30º) = 10 \cdot 10 \cdot \frac{\sqrt{3}}{2} = 86,6 \, \text{N} \).
+            A força de atrito é \( F_{atrito} = \mu_{est} \cdot N = 0,5 \cdot 86,6 = 43,3 \, \text{N} \).
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Um bloco de 8 kg desliza sobre uma superfície horizontal com uma aceleração de 2 m/s². O coeficiente de atrito cinético entre o bloco e a superfície é 0,1. Qual é a força total aplicada ao bloco? Considere g = 10 m/s².
+        <br><br>
+        a) 10 N<br>
+        b) 20 N<br>
+        c) 30 N<br>
+        d) 40 N<br>
+        e) 50 N<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: c) 30 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força de atrito é \( F_{atrito} = \mu_{cin} \cdot N = 0,1 \cdot (8 \cdot 10) = 8 \, \text{N} \).
+            A força total é \( F_{total} = m \cdot a + F_{atrito} = 8 \cdot 2 + 8 = 24 \, \text{N} \).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Uma pessoa empurra uma caixa de 30 kg com uma força de 150 N em uma superfície com um coeficiente de atrito cinético de 0,4. A aceleração da caixa é: Considere g = 10 m/s².
+        <br><br>
+        a) 2 m/s²<br>
+        b) 3 m/s²<br>
+        c) 4 m/s²<br>
+        d) 5 m/s²<br>
+        e) 6 m/s²<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: b) 3 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A força de atrito é \( F_{atrito} = \mu_{cin} \cdot N = 0,4 \cdot (30 \cdot 10) = 120 \, \text{N} \).
+            A força resultante é \( F_{resultante} = 150 - 120 = 30 \, \text{N} \).
+            Aceleração: \( a = \frac{F_{resultante}}{m} = \frac{30}{30} = 1 \, \text{m/s²} \).
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Um bloco de 12 kg é puxado horizontalmente por uma força de 60 N. Se o coeficiente de atrito cinético entre o bloco e a superfície é 0,2, a aceleração do bloco é: Considere g = 10 m/s².
+        <br><br>
+        a) 1 m/s²<br>
+        b) 2 m/s²<br>
+        c) 3 m/s²<br>
+        d) 4 m/s²<br>
+        e) 5 m/s²<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: c) 3 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A força de atrito é \( F_{atrito} = \mu_{cin} \cdot N = 0,2 \cdot (12 \cdot 10) = 24 \, \text{N} \).
+            A força resultante é \( F_{resultante} = 60 - 24 = 36 \, \text{N} \).
+            Aceleração: \( a = \frac{F_{resultante}}{m} = \frac{36}{12} = 3 \, \text{m/s²} \).
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um bloco de 20 kg é mantido em repouso em uma superfície com coeficiente de atrito estático de 0,6. Qual é a força mínima necessária para iniciar o movimento do bloco? Considere g = 10 m/s².
+        <br><br>
+        a) 80 N<br>
+        b) 100 N<br>
+        c) 120 N<br>
+        d) 140 N<br>
+        e) 160 N<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: c) 120 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força de atrito máxima é \( F_{atrito} = \mu_{est} \cdot N = 0,6 \cdot (20 \cdot 10) = 120 \, \text{N} \).
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um bloco de 25 kg está preso a uma corda e pendurado verticalmente. O coeficiente de atrito entre o bloco e a superfície é 0,3. Qual é a força de atrito que atua sobre o bloco? Considere g = 10 m/s².
+        <br><br>
+        a) 60 N<br>
+        b) 75 N<br>
+        c) 80 N<br>
+        d) 90 N<br>
+        e) 100 N<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: d) 75 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força normal é \( N = m \cdot g = 25 \cdot 10 = 250 \, \text{N} \).
+            A força de atrito é \( F_{atrito} = \mu_{cin} \cdot N = 0,3 \cdot 250 = 75 \, \text{N} \).
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(numero) {
+            const resposta = document.getElementById(`resposta${numero}`);
+            resposta.style.display = resposta.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>

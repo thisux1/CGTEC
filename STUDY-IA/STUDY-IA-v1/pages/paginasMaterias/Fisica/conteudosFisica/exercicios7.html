@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Impulso e Quantidade de Movimento</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios de Impulso e Quantidade de Movimento</h1>
+
+    <!-- Exercício 1 -->
+    <p><b>Exercício 1</b><br>
+        Um carro de massa 1000 kg está se movendo a uma velocidade de 20 m/s. Qual é a quantidade de movimento do carro?
+        <br><br>
+        a) 2000 kg·m/s<br>
+        b) 5000 kg·m/s<br>
+        c) 20000 kg·m/s<br>
+        d) 10000 kg·m/s<br>
+        e) 15000 kg·m/s<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: c) 20000 kg·m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A quantidade de movimento é dada por \( p = m \cdot v \). Substituindo os valores:
+            <br> \( p = 1000 \cdot 20 = 20000 \, \text{kg·m/s} \)
+        </span>
+    </p>
+
+    <!-- Exercício 2 -->
+    <p><b>Exercício 2</b><br>
+        Um atleta de 80 kg corre a 8 m/s. Qual é a quantidade de movimento do atleta?
+        <br><br>
+        a) 320 kg·m/s<br>
+        b) 640 kg·m/s<br>
+        c) 80 kg·m/s<br>
+        d) 720 kg·m/s<br>
+        e) 560 kg·m/s<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 640 kg·m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A quantidade de movimento é \( p = m \cdot v \). Portanto:
+            <br> \( p = 80 \cdot 8 = 640 \, \text{kg·m/s} \)
+        </span>
+    </p>
+
+    <!-- Exercício 3 -->
+    <p><b>Exercício 3</b><br>
+        Uma bola de 0,5 kg é lançada com uma velocidade de 10 m/s. Qual é o impulso necessário para parar a bola?
+        <br><br>
+        a) 5 N·s<br>
+        b) 10 N·s<br>
+        c) 7,5 N·s<br>
+        d) 2,5 N·s<br>
+        e) 0,5 N·s<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: a) 5 N·s
+            <br><br>
+            <b>Resolução:</b> 
+            O impulso necessário para parar a bola é igual à variação da quantidade de movimento:
+            <br> \( J = Δp = m \cdot v = 0,5 \cdot 10 = 5 \, \text{N·s} \)
+        </span>
+    </p>
+
+    <!-- Exercício 4 -->
+    <p><b>Exercício 4</b><br>
+        Um caminhão de 2000 kg reduz sua velocidade de 15 m/s para 5 m/s. Qual foi a variação na quantidade de movimento?
+        <br><br>
+        a) 5000 kg·m/s<br>
+        b) 10000 kg·m/s<br>
+        c) 20000 kg·m/s<br>
+        d) 15000 kg·m/s<br>
+        e) 30000 kg·m/s<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: b) 20000 kg·m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A variação na quantidade de movimento é dada por:
+            <br> \( Δp = m \cdot (v_f - v_i) = 2000 \cdot (5 - 15) = 2000 \cdot (-10) = -20000 \, \text{kg·m/s} \)
+            <br>A variação em módulo é de 20000 kg·m/s.
+        </span>
+    </p>
+
+    <!-- Exercício 5 -->
+    <p><b>Exercício 5</b><br>
+        Um jogador de futebol aplica uma força de 100 N em uma bola durante 0,2 segundos. Qual é o impulso sobre a bola?
+        <br><br>
+        a) 15 N·s<br>
+        b) 20 N·s<br>
+        c) 25 N·s<br>
+        d) 30 N·s<br>
+        e) 50 N·s<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: b) 20 N·s
+            <br><br>
+            <b>Resolução:</b> 
+            O impulso é dado por \( J = F \cdot Δt \):
+            <br> \( J = 100 \cdot 0,2 = 20 \, \text{N·s} \)
+        </span>
+    </p>
+
+    <!-- Exercício 6 -->
+    <p><b>Exercício 6</b><br>
+        Um objeto de massa 2 kg recebe um impulso de 16 N·s. Qual será sua velocidade final, sabendo que ele parte do repouso?
+        <br><br>
+        a) 4 m/s<br>
+        b) 6 m/s<br>
+        c) 8 m/s<br>
+        d) 12 m/s<br>
+        e) 16 m/s<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: c) 8 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            O impulso é igual à variação da quantidade de movimento:
+            <br> \( J = Δp = m \cdot Δv \)
+            <br> \( 16 = 2 \cdot Δv \Rightarrow Δv = 8 \, \text{m/s} \)
+        </span>
+    </p>
+
+    <!-- Exercício 7 -->
+    <p><b>Exercício 7</b><br>
+        Uma bola de 0,4 kg é lançada com uma velocidade de 12 m/s. Se ela atinge uma parede e volta com a mesma velocidade, qual foi o impulso total aplicado sobre a bola?
+        <br><br>
+        a) 9,6 N·s<br>
+        b) 4,8 N·s<br>
+        c) 7,2 N·s<br>
+        d) 6,4 N·s<br>
+        e) 12,0 N·s<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: d) 9,6 N·s
+            <br><br>
+            <b>Resolução:</b> 
+            \( J = Δp = m \cdot (v_f - v_i) \)
+            <br> \( J = 0,4 \cdot (-12 - 12) = 0,4 \cdot (-24) = -9,6 \, \text{N·s} \)
+            <br> O impulso total é de 9,6 N·s em módulo.
+        </span>
+    </p>
+
+    <!-- Exercício 8 -->
+    <p><b>Exercício 8</b><br>
+        Um objeto de 3 kg é acelerado de 4 m/s para 12 m/s. Qual foi o impulso aplicado ao objeto?
+        <br><br>
+        a) 24 N·s<br>
+        b) 30 N·s<br>
+        c) 36 N·s<br>
+        d) 20 N·s<br>
+        e) 48 N·s<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: a) 24 N·s
+            <br><br>
+            <b>Resolução:</b> 
+            \( J = Δp = m \cdot Δv = 3 \cdot (12 - 4) = 3 \cdot 8 = 24 \, \text{N·s} \)
+        </span>
+    </p>
+
+    <!-- Exercício 9 -->
+    <p><b>Exercício 9</b><br>
+        Um corpo de 5 kg tem sua velocidade alterada de 10 m/s para 20 m/s. Qual é a variação da quantidade de movimento do corpo?
+        <br><br>
+        a) 50 kg·m/s<br>
+        b) 100 kg·m/s<br>
+        c) 150 kg·m/s<br>
+        d) 200 kg·m/s<br>
+        e) 250 kg·m/s<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: b) 100 kg·m/s
+            <br><br>
+            <b>Resolução:</b> 
+            \( Δp = m \cdot Δv = 5 \cdot (20 - 10) = 5 \cdot 10 = 100 \, \text{kg·m/s} \)
+        </span>
+    </p>
+
+    <!-- Exercício 10 -->
+    <p><b>Exercício 10</b><br>
+        Um corpo de massa 10 kg parte do repouso e recebe um impulso que faz com que atinja a velocidade de 5 m/s. Qual foi o impulso aplicado?
+        <br><br>
+        a) 20 N·s<br>
+        b) 30 N·s<br>
+        c) 40 N·s<br>
+        d) 50 N·s<br>
+        e) 60 N·s<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: d) 50 N·s
+            <br><br>
+            <b>Resolução:</b> 
+            O impulso é igual à variação da quantidade de movimento:
+            <br> \( J = Δp = m \cdot Δv = 10 \cdot 5 = 50 \, \text{N·s} \)
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(exercicio) {
+            var resposta = document.getElementById("resposta" + exercicio);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

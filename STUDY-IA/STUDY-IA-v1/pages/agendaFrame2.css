@@ -1,0 +1,39 @@
+/*Fonte normal*/
+@font-face 
+{
+    font-family: FonteNormal;
+    src: url(fonts/GlacialIndifference-Regular.otf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Fonte com negrito*/
+@font-face 
+{
+    font-family: FonteNegrito;
+    src: url(fonts/GlacialIndifference-Bold.otf) format(otf); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.quadrados {
+    font-family: "FonteNormal", sans-serif;
+    font-size: 25px;
+}
+
+.lembrete {
+    background-image: linear-gradient(to right, #2328bd, #2c1e42);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.lembrete a {
+    color: white;
+}
+
+.lembrete a:hover {
+    text-decoration: underline;
+}

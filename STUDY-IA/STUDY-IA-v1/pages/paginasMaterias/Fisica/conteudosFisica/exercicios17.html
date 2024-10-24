@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios sobre Dilatação Térmica</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios sobre Dilatação Térmica</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        O que é dilatação térmica?<br>
+        <br>
+        a) Aumento da temperatura de um corpo.<br><br>
+        b) Aumento das dimensões de um corpo devido ao aumento de temperatura.<br><br>
+        c) Diminuição da temperatura de um corpo.<br><br>
+        d) Redução das dimensões de um corpo devido à diminuição de temperatura.<br><br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            <br>Alternativa correta: b) Aumento das dimensões de um corpo devido ao aumento de temperatura.<br>
+            <br><b>Resolução:</b> A dilatação térmica ocorre quando as partículas de um corpo se movimentam mais rapidamente devido ao aumento da temperatura, resultando em um aumento de volume ou dimensões do corpo.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Qual dos seguintes materiais apresenta maior coeficiente de dilatação linear?<br>
+        <br>
+        a) Ouro<br><br>
+        b) Alumínio<br><br>
+        c) Vidro<br><br>
+        d) Aço<br><br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            <br>Alternativa correta: b) Alumínio<br>
+            <br><b>Resolução:</b> O alumínio possui um coeficiente de dilatação linear mais alto em comparação com ouro, vidro e aço, o que significa que se expande mais para um mesmo aumento de temperatura.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Um fio de cobre tem 2 m de comprimento a 20 °C. Qual será seu comprimento a 80 °C, sabendo que o coeficiente de dilatação linear do cobre é de \( 0,000017 \, °C^{-1} \)?<br>
+        <br>
+        a) 2,04 m<br><br>
+        b) 2,05 m<br><br>
+        c) 2,06 m<br><br>
+        d) 2,02 m<br><br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            <br>Alternativa correta: a) 2,04 m<br>
+            <br><b>Resolução:</b> A fórmula da dilatação linear é \( \Delta L = L_0 \cdot \alpha \cdot \Delta T \). Para este caso:<br>
+            \[ \Delta L = 2 \, m \cdot 0,000017 \, °C^{-1} \cdot (80 - 20) °C \]<br>
+            \[ \Delta L = 2 \cdot 0,000017 \cdot 60 \]<br>
+            \[ \Delta L = 0,00204 \, m \]<br>
+            Portanto, o novo comprimento é \( 2 + 0,00204 = 2,00204 \, m \approx 2,04 \, m \).
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um tubo de vidro é cheio de água a 0 °C e é colocado em um ambiente a 100 °C. O que acontecerá com a água no tubo?<br>
+        <br>
+        a) A água se contrai.<br><br>
+        b) A água permanece na mesma temperatura.<br><br>
+        c) A água se expande, podendo transbordar.<br><br>
+        d) O tubo quebra.<br><br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            <br>Alternativa correta: c) A água se expande, podendo transbordar.<br>
+            <br><b>Resolução:</b> A água se expande ao ser aquecida, e como o tubo é um recipiente fechado, pode ocorrer transbordamento se a água atingir o volume máximo do tubo.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        O que é dilatação volumétrica?<br>
+        <br>
+        a) Aumento da área de um corpo.<br><br>
+        b) Aumento do volume de um corpo devido ao aumento de temperatura.<br><br>
+        c) Aumento da temperatura de um corpo.<br><br>
+        d) Diminuição do volume de um corpo devido à diminuição de temperatura.<br><br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            <br>Alternativa correta: b) Aumento do volume de um corpo devido ao aumento de temperatura.<br>
+            <br><b>Resolução:</b> A dilatação volumétrica refere-se ao aumento de volume que um corpo sofre quando sua temperatura é aumentada, afetando todos os seus três eixos.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Qual dos seguintes materiais tem a maior dilatação volumétrica?<br>
+        <br>
+        a) Água<br><br>
+        b) Mercúrio<br><br>
+        c) Alumínio<br><br>
+        d) Plástico<br><br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            <br>Alternativa correta: a) Água<br>
+            <br><b>Resolução:</b> A água tem um coeficiente de dilatação volumétrica maior em comparação com mercúrio, alumínio e plástico, especialmente entre 0 °C e 4 °C, onde ocorre a maior expansão.
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Se a temperatura de um cilindro de metal aumenta, como a pressão do gás dentro do cilindro se comporta, mantendo o volume constante?<br>
+        <br>
+        a) A pressão diminui.<br><br>
+        b) A pressão permanece constante.<br><br>
+        c) A pressão aumenta.<br><br>
+        d) A pressão se anula.<br><br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            <br>Alternativa correta: c) A pressão aumenta.<br>
+            <br><b>Resolução:</b> De acordo com a lei de Gay-Lussac, se a temperatura de um gás aumenta em um volume constante, a pressão do gás também aumenta.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Qual é o efeito da dilatação térmica na construção de pontes?<br>
+        <br>
+        a) Não há efeito.<br><br>
+        b) Aumenta a resistência da ponte.<br><br>
+        c) Pode causar deformações se não for considerada.<br><br>
+        d) Diminui a durabilidade da ponte.<br><br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            <br>Alternativa correta: c) Pode causar deformações se não for considerada.<br>
+            <br><b>Resolução:</b> É fundamental que os engenheiros considerem a dilatação térmica ao projetar pontes, pois a expansão e contração dos materiais devido a mudanças de temperatura podem causar deformações se não houver espaço adequado para movimento.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(numero) {
+            const resposta = document.getElementById(`resposta${numero}`);
+            resposta.style.display = resposta.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>

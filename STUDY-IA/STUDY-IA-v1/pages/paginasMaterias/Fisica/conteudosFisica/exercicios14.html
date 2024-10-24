@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Doppler</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Efeito Doppler</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um carro que está se movendo a 30 m/s em direção a um observador em repouso emite um som de frequência 600 Hz. Qual é a frequência percebida pelo observador? (Considere a velocidade do som no ar como 340 m/s.)
+        <br><br>
+        a) 500 Hz<br>
+        b) 600 Hz<br>
+        c) 700 Hz<br>
+        d) 800 Hz<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: c) 700 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a fórmula do Efeito Doppler para fonte em movimento em direção ao observador:<br>
+            \( f' = f \frac{v + v_o}{v - v_s} \)<br>
+            onde \( v = 340 \, \text{m/s} \), \( v_o = 0 \, \text{m/s} \) (observador em repouso), \( v_s = 30 \, \text{m/s} \). Portanto, substituindo, temos:
+            \( f' = 600 \times \frac{340 + 0}{340 - 30} = 600 \times \frac{340}{310} \approx 655 Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Um trem que passa por uma estação emite um sinal sonoro de 1200 Hz. Qual será a frequência percebida por uma pessoa na plataforma quando o trem estiver se afastando a 20 m/s?
+        <br><br>
+        a) 1000 Hz<br>
+        b) 1200 Hz<br>
+        c) 1300 Hz<br>
+        d) 1400 Hz<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: a) 1000 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a fórmula do Efeito Doppler para fonte em movimento afastando-se do observador:<br>
+            \( f' = f \frac{v - v_o}{v + v_s} \)<br>
+            onde \( v = 340 \, \text{m/s} \), \( v_o = 0 \, \text{m/s} \) (observador em repouso), \( v_s = 20 \, \text{m/s} \). Substituindo, temos:
+            \( f' = 1200 \times \frac{340 - 0}{340 + 20} = 1200 \times \frac{340}{360} \approx 1133 Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Um helicóptero voa a uma velocidade de 50 m/s em direção a um observador. Se a frequência do som emitido pelo helicóptero é de 800 Hz, qual é a frequência percebida pelo observador? (Considere a velocidade do som como 340 m/s.)
+        <br><br>
+        a) 670 Hz<br>
+        b) 800 Hz<br>
+        c) 900 Hz<br>
+        d) 950 Hz<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: d) 950 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            Utilizando a fórmula do Efeito Doppler:<br>
+            \( f' = f \frac{v + v_o}{v - v_s} \)<br>
+            onde \( f = 800 \, \text{Hz} \), \( v = 340 \, \text{m/s} \), \( v_o = 0 \, \text{m/s} \), e \( v_s = 50 \, \text{m/s} \). Assim, temos:
+            \( f' = 800 \times \frac{340 + 0}{340 - 50} = 800 \times \frac{340}{290} \approx 936 Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um motorista ouve o som de uma sirene de ambulância enquanto ela se aproxima. Quando a ambulância passa e começa a se afastar, ele nota que a frequência do som diminui. Isso é um exemplo de qual fenômeno?
+        <br><br>
+        a) Reflexão<br>
+        b) Refratação<br>
+        c) Efeito Doppler<br>
+        d) Difração<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: c) Efeito Doppler
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um rádio de onda curta emite uma frequência de 10 MHz. Se a fonte se move em direção a um receptor a uma velocidade de 30 m/s, qual será a frequência percebida pelo receptor? (Considere a velocidade das ondas de rádio como 3 × 10^8 m/s.)
+        <br><br>
+        a) 10,000001 MHz<br>
+        b) 10,00001 MHz<br>
+        c) 10,0001 MHz<br>
+        d) 10,001 MHz<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: b) 10,00001 MHz
+            <br><br>
+            <b>Resolução:</b> 
+            Aplicamos a fórmula do Efeito Doppler:<br>
+            \( f' = f \frac{v + v_o}{v - v_s} \)<br>
+            onde \( f = 10 \, \text{MHz} \), \( v = 3 \times 10^8 \, \text{m/s} \), \( v_o = 0 \), \( v_s = 30 \, \text{m/s} \). Portanto:
+            \( f' = 10 \times 10^6 \times \frac{3 \times 10^8 + 0}{3 \times 10^8 - 30} \approx 10.00001 \, \text{MHz} \).
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Se um observador se move em direção a uma fonte sonora que emite uma frequência de 500 Hz, como a frequência percebida pelo observador será afetada?
+        <br><br>
+        a) A frequência percebida diminuirá<br>
+        b) A frequência percebida aumentará<br>
+        c) A frequência não será afetada<br>
+        d) A frequência se tornará zero<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) A frequência percebida aumentará
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Se a ambulância estiver se afastando do observador a 40 m/s e emite um som de 1000 Hz, qual será a frequência percebida? (Considere a velocidade do som como 340 m/s.)
+        <br><br>
+        a) 800 Hz<br>
+        b) 900 Hz<br>
+        c) 1000 Hz<br>
+        d) 1100 Hz<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: a) 800 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a fórmula do Efeito Doppler:<br>
+            \( f' = f \frac{v - v_o}{v + v_s} \)<br>
+            onde \( v = 340 \, \text{m/s} \), \( v_o = 0 \, \text{m/s} \), \( v_s = 40 \, \text{m/s} \). Assim:
+            \( f' = 1000 \times \frac{340 - 0}{340 + 40} = 1000 \times \frac{340}{380} \approx 895 Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Um avião a jato está se movendo a uma velocidade de 300 m/s. Se a frequência do som emitido pelo motor do avião é de 1000 Hz, qual é a frequência percebida por um observador no solo? (Considere a velocidade do som como 340 m/s.)
+        <br><br>
+        a) 1100 Hz<br>
+        b) 1200 Hz<br>
+        c) 900 Hz<br>
+        d) 800 Hz<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 1200 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            Utilizamos a fórmula do Efeito Doppler para fonte em movimento em direção ao observador:<br>
+            \( f' = f \frac{v + v_o}{v - v_s} \)<br>
+            onde \( v = 340 \, \text{m/s} \), \( v_o = 0 \), \( v_s = 300 \, \text{m/s} \). Portanto:
+            \( f' = 1000 \times \frac{340 + 0}{340 - 300} = 1000 \times \frac{340}{40} = 8500 Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um músico está tocando uma flauta com uma frequência de 440 Hz. Se ele está se afastando de um ouvinte a uma velocidade de 5 m/s, qual será a frequência percebida pelo ouvinte? (Considere a velocidade do som como 340 m/s.)
+        <br><br>
+        a) 425 Hz<br>
+        b) 435 Hz<br>
+        c) 445 Hz<br>
+        d) 455 Hz<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: a) 425 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            Utilizando a fórmula do Efeito Doppler:<br>
+            \( f' = f \frac{v - v_o}{v + v_s} \)<br>
+            onde \( f = 440 \, \text{Hz} \), \( v = 340 \, \text{m/s} \), \( v_o = 0 \), e \( v_s = 5 \, \text{m/s} \). Assim:
+            \( f' = 440 \times \frac{340 - 0}{340 + 5} = 440 \times \frac{340}{345} \approx 426 Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um ciclista que se move a 10 m/s ouve um sino que toca a uma frequência de 250 Hz. Qual é a frequência percebida pelo ciclista? (Considere a velocidade do som como 340 m/s.)
+        <br><br>
+        a) 240 Hz<br>
+        b) 250 Hz<br>
+        c) 260 Hz<br>
+        d) 270 Hz<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: c) 260 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            Utilizamos a fórmula do Efeito Doppler:<br>
+            \( f' = f \frac{v + v_o}{v - v_s} \)<br>
+            onde \( f = 250 \, \text{Hz} \), \( v = 340 \, \text{m/s} \), \( v_o = 10 \, \text{m/s} \), e \( v_s = 0 \). Portanto:
+            \( f' = 250 \times \frac{340 + 10}{340 - 0} = 250 \times \frac{350}{340} \approx 257 Hz \).
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            document.getElementById('resposta' + questao).style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Elétrico e Potencial Elétrico</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Campo Elétrico e Potencial Elétrico</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Uma carga de 2 µC está localizada em um campo elétrico uniforme de 500 N/C. Qual é a força elétrica sobre a carga?
+        <br><br>
+        a) 1,0 N<br>
+        b) 0,5 N<br>
+        c) 0,1 N<br>
+        d) 0,25 N<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: a) 1,0 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força elétrica é calculada pela fórmula: F = qE, onde F é a força, q é a carga e E é o campo elétrico.<br>
+            F = 2 × 10⁻⁶ C × 500 N/C = 1,0 N.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Duas cargas pontuais de 5 µC estão separadas por 10 cm. Qual é a intensidade do campo elétrico no ponto médio entre as duas cargas?
+        <br><br>
+        a) 4,5 × 10⁶ N/C<br>
+        b) 9,0 × 10⁶ N/C<br>
+        c) 0 N/C<br>
+        d) 1,8 × 10⁶ N/C<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: c) 0 N/C
+            <br><br>
+            <b>Resolução:</b> 
+            Como as duas cargas são iguais e estão em posições opostas em relação ao ponto médio, seus campos elétricos se cancelam, resultando em um campo elétrico total de 0 N/C.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Uma carga de teste de 3 µC é colocada em um ponto onde o potencial elétrico é 12 V. Qual é a energia potencial elétrica da carga?
+        <br><br>
+        a) 36 J<br>
+        b) 3,6 × 10⁻⁵ J<br>
+        c) 0,36 J<br>
+        d) 0,0036 J<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: b) 3,6 × 10⁻⁵ J
+            <br><br>
+            <b>Resolução:</b> 
+            A energia potencial elétrica é calculada pela fórmula: U = qV, onde q é a carga e V é o potencial.<br>
+            U = 3 × 10⁻⁶ C × 12 V = 3,6 × 10⁻⁵ J.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Qual é o trabalho realizado para mover uma carga de 5 µC entre dois pontos de um campo elétrico com uma diferença de potencial de 100 V?
+        <br><br>
+        a) 0,005 J<br>
+        b) 0,05 J<br>
+        c) 0,5 J<br>
+        d) 5 J<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: b) 0,05 J
+            <br><br>
+            <b>Resolução:</b> 
+            O trabalho realizado para mover uma carga em um campo elétrico é dado por W = qΔV.<br>
+            W = 5 × 10⁻⁶ C × 100 V = 0,05 J.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um campo elétrico uniforme aponta para o leste e tem uma intensidade de 200 N/C. Qual é a diferença de potencial entre dois pontos separados por 0,5 m na direção leste?
+        <br><br>
+        a) 100 V<br>
+        b) 200 V<br>
+        c) 50 V<br>
+        d) 0 V<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: a) 100 V
+            <br><br>
+            <b>Resolução:</b> 
+            A diferença de potencial em um campo elétrico uniforme é dada por ΔV = E × d, onde E é o campo e d é a distância.<br>
+            ΔV = 200 N/C × 0,5 m = 100 V.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Uma carga de 8 µC é colocada em um campo elétrico de intensidade 400 N/C. Qual é a aceleração da carga, sabendo que sua massa é 2 mg?
+        <br><br>
+        a) 1,6 × 10⁶ m/s²<br>
+        b) 3,2 × 10⁶ m/s²<br>
+        c) 4,0 × 10⁶ m/s²<br>
+        d) 8,0 × 10⁶ m/s²<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) 1,6 × 10⁶ m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A força elétrica é dada por F = qE, e a aceleração é a = F/m.<br>
+            F = 8 × 10⁻⁶ C × 400 N/C = 3,2 × 10⁻³ N.<br>
+            a = F/m = (3,2 × 10⁻³ N) / (2 × 10⁻³ kg) = 1,6 × 10⁶ m/s².
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Qual é o campo elétrico gerado por uma carga pontual de 3 µC a uma distância de 15 cm no vácuo?
+        <br><br>
+        a) 1,2 × 10⁵ N/C<br>
+        b) 2,4 × 10⁵ N/C<br>
+        c) 4,8 × 10⁵ N/C<br>
+        d) 6,0 × 10⁵ N/C<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: a) 1,2 × 10⁵ N/C
+            <br><br>
+            <b>Resolução:</b> 
+            O campo elétrico gerado por uma carga pontual é dado por: E = k|q|/r², onde k = 9 × 10⁹ N·m²/C².<br>
+            E = (9 × 10⁹ N·m²/C²) × (3 × 10⁻⁶ C) / (0,15 m)² = 1,2 × 10⁵ N/C.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Duas cargas de 10 µC estão separadas por 50 cm. Qual é o potencial elétrico no ponto médio entre elas?
+        <br><br>
+        a) 720 V<br>
+        b) 1440 V<br>
+        c) 2880 V<br>
+        d) 0 V<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 1440 V
+            <br><br>
+            <b>Resolução:</b> 
+            O potencial elétrico total no ponto médio é a soma dos potenciais gerados por cada carga. V = kq/r.<br>
+            Cada carga gera um potencial de V = (9 × 10⁹) × (10 × 10⁻⁶ C) / (0,25 m) = 3600 V. Como o ponto médio está a 0,25 m de cada carga, o potencial total é a soma dos dois: V = 2 × 720 V = 1440 V.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(numero) {
+            var resposta = document.getElementById('resposta' + numero);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'block';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

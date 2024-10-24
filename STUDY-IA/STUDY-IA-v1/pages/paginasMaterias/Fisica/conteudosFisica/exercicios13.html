@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexão, Refração e Difração</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Reflexão, Refração e Difração</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um feixe de luz incide sobre um espelho plano com um ângulo de 30° em relação à normal. Qual será o ângulo de reflexão?
+        <br><br>
+        a) 30°<br>
+        b) 60°<br>
+        c) 45°<br>
+        d) 90°<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: a) 30°
+            <br><br>
+            <b>Resolução:</b> 
+            De acordo com a Lei da Reflexão, o ângulo de incidência é igual ao ângulo de reflexão. Portanto, o ângulo de reflexão também será 30°.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Um raio de luz passa do ar (n = 1) para a água (n = 1,33) com um ângulo de incidência de 45°. Qual é o ângulo de refração?
+        <br><br>
+        a) 32°<br>
+        b) 45°<br>
+        c) 38°<br>
+        d) 25°<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: a) 32°
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a Lei de Snell: \( n_1 \cdot \sin(\theta_1) = n_2 \cdot \sin(\theta_2) \).
+            Portanto, \( 1 \cdot \sin(45°) = 1,33 \cdot \sin(\theta_2) \) → \( \sin(\theta_2) \approx 0,47 \) → \( \theta_2 \approx 32° \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Quando a luz passa por uma fenda estreita, o que acontece com a luz?
+        <br><br>
+        a) Ela é refletida.<br>
+        b) Ela se propaga em linha reta.<br>
+        c) Ela se espalha.<br>
+        d) Ela é absorvida.<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: c) Ela se espalha.
+            <br><br>
+            <b>Resolução:</b> 
+            A difração ocorre quando uma onda encontra um obstáculo ou uma abertura, resultando em um espalhamento da luz.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        A velocidade da luz no vácuo é de aproximadamente 3 × 10⁸ m/s. Qual é a velocidade da luz na água (n = 1,33)?
+        <br><br>
+        a) 2,26 × 10⁸ m/s<br>
+        b) 3,00 × 10⁸ m/s<br>
+        c) 1,91 × 10⁸ m/s<br>
+        d) 2,25 × 10⁸ m/s<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 2,26 × 10⁸ m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A velocidade da luz na água é dada por \( v = \frac{c}{n} \). Portanto, \( v \approx \frac{3 × 10⁸}{1,33} \approx 2,26 × 10⁸ \, m/s \).
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Qual é o ângulo crítico para a luz passando do vidro (n = 1,5) para o ar (n = 1)?
+        <br><br>
+        a) 45°<br>
+        b) 60°<br>
+        c) 90°<br>
+        d) 41°<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: d) 41°
+            <br><br>
+            <b>Resolução:</b> 
+            O ângulo crítico \( \theta_c \) é dado por \( \theta_c = \arcsin(\frac{n_2}{n_1}) \). Assim, \( \theta_c = \arcsin(\frac{1}{1,5}) \approx 41° \).
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Em que condição ocorre a reflexão total?
+        <br><br>
+        a) Quando a luz passa de um meio mais denso para um meio menos denso.<br>
+        b) Quando a luz passa de um meio menos denso para um meio mais denso.<br>
+        c) Quando o ângulo de incidência é menor que o ângulo crítico.<br>
+        d) Em qualquer incidência.<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: a) Quando a luz passa de um meio mais denso para um meio menos denso.
+            <br><br>
+            <b>Resolução:</b> 
+            A reflexão total ocorre quando o ângulo de incidência é maior que o ângulo crítico, que é o caso quando a luz passa de um meio mais denso (como vidro) para um meio menos denso (como ar).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um feixe de luz branca incide em uma rede de difração. O que acontece com a luz?
+        <br><br>
+        a) A luz é absorvida.<br>
+        b) A luz se reflete.<br>
+        c) A luz se dispersa em suas cores.<br>
+        d) A luz permanece inalterada.<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: c) A luz se dispersa em suas cores.
+            <br><br>
+            <b>Resolução:</b> 
+            A difração separa as cores da luz branca devido às diferentes velocidades de cada cor na rede de difração.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Qual é a principal função de uma lente convergente?
+        <br><br>
+        a) Difundir a luz.<br>
+        b) Refletir a luz.<br>
+        c) Convergir os raios de luz para um ponto.<br>
+        d) Absorver a luz.<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: c) Convergir os raios de luz para um ponto.
+            <br><br>
+            <b>Resolução:</b> 
+            As lentes convergentes são projetadas para focalizar os raios de luz que passam através delas em um único ponto.
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Quando a luz passa de um meio para outro e não muda de direção, o que pode ser concluído sobre os índices de refração desses meios?
+        <br><br>
+        a) Eles são iguais.<br>
+        b) Um é maior que o outro.<br>
+        c) Um é menor que o outro.<br>
+        d) Não é possível determinar.<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: a) Eles são iguais.
+            <br><br>
+            <b>Resolução:</b> 
+            Se a luz não muda de direção, significa que os índices de refração dos dois meios são iguais, resultando em um ângulo de incidência igual ao ângulo de refração.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        O que acontece com a luz ao passar por uma lente cilíndrica?
+        <br><br>
+        a) A luz é espalhada.<br>
+        b) A luz é concentrada em um ponto.<br>
+        c) A luz é convertida em calor.<br>
+        d) A luz se difrata.<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: a) A luz é espalhada.
+            <br><br>
+            <b>Resolução:</b> 
+            As lentes cilíndricas dispersam a luz em uma direção, ao contrário das lentes esféricas que convergem ou divergem a luz em todas as direções.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(numero) {
+            const resposta = document.getElementById(`resposta${numero}`);
+            resposta.style.display = resposta.style.display === "none" ? "block" : "none";
+        }
+    </script>
+    
+</body>
+
+</html>

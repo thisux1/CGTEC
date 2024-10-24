@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Posição, Velocidade e Aceleração</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios de Gráficos de Posição, Velocidade e Aceleração</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um carro está em movimento retilíneo com aceleração constante. O gráfico de velocidade vs. tempo para esse movimento será:
+        <br><br>
+        a) Uma curva<br>
+        b) Uma reta inclinada<br>
+        c) Uma linha horizontal<br>
+        d) Uma linha inclinada para baixo<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: b) Uma reta inclinada
+            <br><br>
+            <b>Resolução:</b> 
+            Quando um objeto se move com aceleração constante, o gráfico de velocidade vs. tempo é uma reta inclinada, já que a velocidade muda de forma linear com o tempo.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Se o gráfico de posição vs. tempo de um objeto é uma linha reta com inclinação constante, qual é o tipo de movimento do objeto?
+        <br><br>
+        a) Movimento Retilíneo Uniforme (MRU)<br>
+        b) Movimento Acelerado<br>
+        c) Movimento Oscilatório<br>
+        d) Movimento Circular Uniforme<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: a) Movimento Retilíneo Uniforme (MRU)
+            <br><br>
+            <b>Resolução:</b> 
+            No MRU, a posição varia de forma linear com o tempo, resultando em um gráfico de posição vs. tempo com uma reta de inclinação constante.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        O gráfico de aceleração vs. tempo para um objeto que se move com aceleração constante será:
+        <br><br>
+        a) Uma reta inclinada<br>
+        b) Uma parábola<br>
+        c) Uma linha horizontal<br>
+        d) Uma curva crescente<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: c) Uma linha horizontal
+            <br><br>
+            <b>Resolução:</b> 
+            Quando a aceleração é constante, o gráfico de aceleração vs. tempo será uma linha horizontal, pois a aceleração não varia com o tempo.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Em um gráfico de velocidade vs. tempo, se a linha estiver inclinada para baixo, o objeto está:
+        <br><br>
+        a) Acelerando<br>
+        b) Desacelerando<br>
+        c) Parado<br>
+        d) Com velocidade constante<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: b) Desacelerando
+            <br><br>
+            <b>Resolução:</b> 
+            Uma linha inclinada para baixo em um gráfico de velocidade vs. tempo indica que a velocidade está diminuindo com o tempo, caracterizando uma desaceleração.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Se o gráfico de posição vs. tempo de um objeto for uma parábola, o que isso indica sobre o movimento do objeto?
+        <br><br>
+        a) Ele está em repouso<br>
+        b) Ele está com velocidade constante<br>
+        c) Ele está acelerando<br>
+        d) Ele está desacelerando<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: c) Ele está acelerando
+            <br><br>
+            <b>Resolução:</b> 
+            Um gráfico de posição vs. tempo em forma de parábola indica que a velocidade está mudando com o tempo, ou seja, o objeto está acelerando.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Qual gráfico representa um objeto em movimento com velocidade constante?
+        <br><br>
+        a) Aceleração vs. tempo: linha inclinada<br>
+        b) Velocidade vs. tempo: reta horizontal<br>
+        c) Posição vs. tempo: curva<br>
+        d) Aceleração vs. tempo: parábola<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) Velocidade vs. tempo: reta horizontal
+            <br><br>
+            <b>Resolução:</b> 
+            Um gráfico de velocidade vs. tempo com uma linha reta horizontal indica que a velocidade é constante, pois não há variação ao longo do tempo.
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Se o gráfico de aceleração vs. tempo for uma reta inclinada para cima, isso significa que:
+        <br><br>
+        a) A aceleração do objeto está aumentando<br>
+        b) O objeto está em repouso<br>
+        c) O objeto está com velocidade constante<br>
+        d) A aceleração do objeto está diminuindo<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: a) A aceleração do objeto está aumentando
+            <br><br>
+            <b>Resolução:</b> 
+            Uma reta inclinada para cima em um gráfico de aceleração vs. tempo indica que a aceleração está aumentando ao longo do tempo.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Em um gráfico de posição vs. tempo, se a linha for uma curva concava para baixo, o objeto está:
+        <br><br>
+        a) Acelerando<br>
+        b) Em repouso<br>
+        c) Desacelerando<br>
+        d) Com velocidade constante<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: c) Desacelerando
+            <br><br>
+            <b>Resolução:</b> 
+            Uma curva concava para baixo no gráfico de posição vs. tempo indica que a velocidade está diminuindo, ou seja, o objeto está desacelerando.
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um objeto com movimento retilíneo uniforme tem um gráfico de aceleração vs. tempo que é:
+        <br><br>
+        a) Uma linha inclinada<br>
+        b) Uma parábola<br>
+        c) Uma linha no zero<br>
+        d) Uma curva crescente<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: c) Uma linha no zero
+            <br><br>
+            <b>Resolução:</b> 
+            No MRU, a aceleração é zero, portanto o gráfico de aceleração vs. tempo será uma linha constante no zero.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Qual das seguintes alternativas é correta sobre a relação entre os gráficos de movimento?
+        <br><br>
+        a) A derivada do gráfico de velocidade em relação ao tempo é a aceleração<br>
+        b) A integral do gráfico de aceleração em relação ao tempo é a posição<br>
+        c) A derivada do gráfico de posição em relação ao tempo é a aceleração<br>
+        d) A integral do gráfico de velocidade em relação ao tempo é a aceleração<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: a) A derivada do gráfico de velocidade em relação ao tempo é a aceleração
+            <br><br>
+            <b>Resolução:</b> 
+            A aceleração é a taxa de variação da velocidade com o tempo, ou seja, a derivada da velocidade em relação ao tempo. A integral da aceleração em relação ao tempo dá a variação da velocidade.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById("resposta" + questao);
+            resposta.style.display = resposta.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+
+</html>

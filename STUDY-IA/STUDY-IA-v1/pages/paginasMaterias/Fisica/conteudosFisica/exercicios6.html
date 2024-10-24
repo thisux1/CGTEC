@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Movimento Circular Uniforme</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios de Movimento Circular Uniforme e Força Centrípeta</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um carro realiza uma curva com um raio de 50 m a uma velocidade constante de 20 m/s. Qual é a aceleração centrípeta do carro?
+        <br><br>
+        a) 4 m/s²<br>
+        b) 8 m/s²<br>
+        c) 10 m/s²<br>
+        d) 16 m/s²<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: b) 8 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A fórmula para a aceleração centrípeta é \( a_c = \frac{v^2}{r} \).
+            \[
+            a_c = \frac{(20 \, \text{m/s})^2}{50 \, \text{m}} = \frac{400}{50} = 8 \, \text{m/s²}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Um objeto de 2 kg está se movendo em um círculo de raio 3 m com uma velocidade constante de 12 m/s. Qual é a força centrípeta que atua sobre o objeto?
+        <br><br>
+        a) 8 N<br>
+        b) 12 N<br>
+        c) 16 N<br>
+        d) 24 N<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: d) 24 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força centrípeta é dada por \( F_c = m \cdot a_c \), onde \( a_c = \frac{v^2}{r} \).
+            \[
+            a_c = \frac{(12 \, \text{m/s})^2}{3 \, \text{m}} = \frac{144}{3} = 48 \, \text{m/s²}
+            \]
+            \[
+            F_c = 2 \, \text{kg} \cdot 48 \, \text{m/s²} = 24 \, \text{N}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Um ciclista faz uma curva em um caminho circular com raio de 15 m a uma velocidade de 6 m/s. Determine a força centrípeta que atua sobre o ciclista, considerando que sua massa é de 70 kg.
+        <br><br>
+        a) 12 N<br>
+        b) 14 N<br>
+        c) 16 N<br>
+        d) 18 N<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: c) 16 N
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, calculamos a aceleração centrípeta:
+            \[
+            a_c = \frac{(6 \, \text{m/s})^2}{15 \, \text{m}} = \frac{36}{15} = 2.4 \, \text{m/s²}
+            \]
+            Agora, a força centrípeta:
+            \[
+            F_c = m \cdot a_c = 70 \, \text{kg} \cdot 2.4 \, \text{m/s²} = 168 \, \text{N}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um satélite orbita a Terra a uma altura de 3000 km com uma velocidade de 7,5 km/s. Calcule a aceleração centrípeta do satélite.
+        <br><br>
+        a) 1,25 m/s²<br>
+        b) 1,5 m/s²<br>
+        c) 2,0 m/s²<br>
+        d) 3,0 m/s²<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 1,25 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A aceleração centrípeta é dada por:
+            \[
+            a_c = \frac{(7,5 \times 10^3 \, \text{m/s})^2}{R}
+            \]
+            onde \( R = 3000 \, \text{km} + 6400 \, \text{km} \approx 9400 \, \text{km} \) (raio da Terra).
+            Convertendo:
+            \[
+            R \approx 9.4 \times 10^6 \, \text{m}
+            \]
+            Calculando \( a_c \):
+            \[
+            a_c = \frac{(7.5 \times 10^3)^2}{9.4 \times 10^6} \approx 1.25 \, \text{m/s²}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um carrinho de montanha-russa está no ponto mais alto de uma curva circular de raio 20 m, movendo-se a uma velocidade de 15 m/s. Qual é a aceleração centrípeta do carrinho?
+        <br><br>
+        a) 5,6 m/s²<br>
+        b) 7,5 m/s²<br>
+        c) 11,25 m/s²<br>
+        d) 16,5 m/s²<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: c) 11,25 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A aceleração centrípeta é:
+            \[
+            a_c = \frac{v^2}{r} = \frac{(15 \, \text{m/s})^2}{20 \, \text{m}} = \frac{225}{20} = 11.25 \, \text{m/s²}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Um artista de circo gira um bloco de massa 5 kg em uma corda de 2 m de comprimento, fazendo-o descrever um círculo horizontal. Se a velocidade do bloco é de 4 m/s, qual é a força centrípeta exercida sobre ele?
+        <br><br>
+        a) 10 N<br>
+        b) 8 N<br>
+        c) 6 N<br>
+        d) 4 N<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: a) 10 N
+            <br><br>
+            <b>Resolução:</b> 
+            A aceleração centrípeta é:
+            \[
+            a_c = \frac{v^2}{r} = \frac{(4 \, \text{m/s})^2}{2 \, \text{m}} = \frac{16}{2} = 8 \, \text{m/s²}
+            \]
+            E a força centrípeta:
+            \[
+            F_c = m \cdot a_c = 5 \, \text{kg} \cdot 8 \, \text{m/s²} = 40 \, \text{N}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um carro de 1200 kg faz uma curva de raio 40 m a uma velocidade de 25 m/s. Qual é a força centrípeta atuando no carro?
+        <br><br>
+        a) 250 N<br>
+        b) 500 N<br>
+        c) 750 N<br>
+        d) 1200 N<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: b) 500 N
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, calculamos a aceleração centrípeta:
+            \[
+            a_c = \frac{(25 \, \text{m/s})^2}{40 \, \text{m}} = \frac{625}{40} = 15.625 \, \text{m/s²}
+            \]
+            Agora, a força centrípeta:
+            \[
+            F_c = m \cdot a_c = 1200 \, \text{kg} \cdot 15.625 \, \text{m/s²} = 18750 \, \text{N}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Um carro de corrida passa por uma curva circular de raio 100 m a uma velocidade de 30 m/s. Calcule a força centrípeta atuando no carro, cuja massa é 800 kg.
+        <br><br>
+        a) 720 N<br>
+        b) 600 N<br>
+        c) 900 N<br>
+        d) 800 N<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 600 N
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, a aceleração centrípeta:
+            \[
+            a_c = \frac{(30 \, \text{m/s})^2}{100 \, \text{m}} = \frac{900}{100} = 9 \, \text{m/s²}
+            \]
+            E a força centrípeta:
+            \[
+            F_c = m \cdot a_c = 800 \, \text{kg} \cdot 9 \, \text{m/s²} = 7200 \, \text{N}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Uma esfera de 0,5 kg está presa a uma corda de 1 m e gira em um círculo horizontal a uma velocidade de 10 m/s. Determine a força centrípeta exercida sobre a esfera.
+        <br><br>
+        a) 5 N<br>
+        b) 10 N<br>
+        c) 20 N<br>
+        d) 15 N<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: c) 50 N
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, a aceleração centrípeta:
+            \[
+            a_c = \frac{(10 \, \text{m/s})^2}{1 \, \text{m}} = \frac{100}{1} = 100 \, \text{m/s²}
+            \]
+            Agora, a força centrípeta:
+            \[
+            F_c = m \cdot a_c = 0.5 \, \text{kg} \cdot 100 \, \text{m/s²} = 50 \, \text{N}
+            \]
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um patinador gira em um círculo de raio 2 m a uma velocidade de 5 m/s. Qual é a aceleração centrípeta do patinador?
+        <br><br>
+        a) 6,25 m/s²<br>
+        b) 10 m/s²<br>
+        c) 12,5 m/s²<br>
+        d) 7,5 m/s²<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: a) 12,5 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            A aceleração centrípeta é:
+            \[
+            a_c = \frac{(5 \, \text{m/s})^2}{2 \, \text{m}} = \frac{25}{2} = 12.5 \, \text{m/s²}
+            \]
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            const resposta = document.getElementById(`resposta${questao}`);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+
+</html>
