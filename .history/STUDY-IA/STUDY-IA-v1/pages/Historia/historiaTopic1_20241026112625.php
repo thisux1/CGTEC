@@ -3,15 +3,14 @@ $message = ""; // Variável para armazenar a mensagem
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['btn1'])) {
-        $message = 'conteudoBiologia/topico2.html'; // Define o caminho do arquivo HTML
+        $message = "http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/Historia/conteudoHistoria/topico1.html"; // Define o caminho do arquivo HTML
     } elseif (isset($_POST['btn2'])) {
-        $message = ""; // URL do vídeo do YouTube
+        $message = "https://www.youtube.com/watch?v=QNK9uTncolU"; // URL do vídeo do YouTube
     } elseif (isset($_POST['btn3'])) {
-        $message = 'conteudoBiologia/exercicios2.html'; // Exemplo de mensagem simples
+        $message = 'conteudoHistoria/exercicios1.html'; // Exemplo de mensagem simples
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,24 +18,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="paginasMaterias.css">
-    <title>STUDY IA | Biologia</title>
+    <title>STUDY IA | História</title>
 </head>
 <body>
 
-    <?php             include'header.php';                          ?> 
+<?php             include'/../header.php';                          ?> 
 
     <div class="boxTitulo">
-        <h1>Biologia</h1>
-        <img src="images/icons/21-removebg-preview.png" id="imagemTitulo">
+        <h1>História</h1>
+        <img src="images/icons/23-removebg-preview.png" id="imagemTitulo">
     </div>
 
     <div class="boxMeio">
 
         <div class="escolherConteudo">
 
-        <span class="titulo">1. Citologia (Biologia Celular)</span>
+        <span class="titulo">1. História Antiga</span>
         <br>
-        <span class="topico">Membrana plasmática: transporte passivo, ativo e osmose</span>
+        <span class="topico">Civilizações da Mesopotâmia, Egito, Grécia e Roma.</span>
 
         <br><br>
 

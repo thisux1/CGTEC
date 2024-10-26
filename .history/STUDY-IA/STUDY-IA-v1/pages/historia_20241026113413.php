@@ -22,13 +22,14 @@
         <div class="checkbox-container">
             <input type="checkbox" id="checkbox1" class="checkbox" value="topic1" />
             <label for="checkbox1" class="check-text"><a href="/Historia/historiaTopic1.php">Civilizações da Mesopotâmia, Egito, Grécia e Roma.</a></label>
-        </div>
+        </div>http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/Historia/historiaTopic1.php
         <div class="checkbox-container">
             <input type="checkbox" id="checkbox2" class="checkbox" value="topic2" />
             <label for="checkbox2" class="check-text"><a href="/Historia/historiaTopic2.php">Formação de impérios, cultura clássica e legado greco-romano.</a></label>
         </div>
 
-        
+        http://localhost/Historia/historiaTopic1.php
+        http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/Historia/historiaTopic1.php
         <h2>2. Idade Média </h2>
         <div class="checkbox-container">
             <input type="checkbox" id="checkbox3" class="checkbox" value="topic3" />

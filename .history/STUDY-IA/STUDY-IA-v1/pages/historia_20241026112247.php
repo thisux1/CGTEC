@@ -28,7 +28,6 @@
             <label for="checkbox2" class="check-text"><a href="/Historia/historiaTopic2.php">Formação de impérios, cultura clássica e legado greco-romano.</a></label>
         </div>
 
-        
         <h2>2. Idade Média </h2>
         <div class="checkbox-container">
             <input type="checkbox" id="checkbox3" class="checkbox" value="topic3" />

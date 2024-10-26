@@ -3,11 +3,11 @@ $message = ""; // Variável para armazenar a mensagem
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['btn1'])) {
-        $message = 'conteudoBiologia/topico2.html'; // Define o caminho do arquivo HTML
+        $message = 'conteudoBiologia/topico4.html'; // Define o caminho do arquivo HTML
     } elseif (isset($_POST['btn2'])) {
         $message = ""; // URL do vídeo do YouTube
     } elseif (isset($_POST['btn3'])) {
-        $message = 'conteudoBiologia/exercicios2.html'; // Exemplo de mensagem simples
+        $message = 'conteudoBiologia/exercicios4.html'; // Exemplo de mensagem simples
     }
 }
 ?>
@@ -23,7 +23,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
-    <?php             include'header.php';                          ?> 
+    <div class="boxSuperior"> <!--Parte superior-->
+        <a href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/perfil.php"><img src="<?php echo isset($imagemComCacheBuster) ? $imagemComCacheBuster : 'images/fotoPerfil.png'; ?>" class="imagem1" alt="Foto de Perfil"></a>
+        <span><a class="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/materias.php">Disciplinas</a></span>
+        <span><a class="links1" href="http://localhost/CGTEC/chatbot-openai/chatbot.html">Peça ajuda a IA</a></span>
+        <span><a class="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/sobreSTUDYIA.php">Sobre o STUDY IA</a></span>
+        <span><a class="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/login.php">Sair</a></span>
+    </div>
 
     <div class="boxTitulo">
         <h1>Biologia</h1>
@@ -34,9 +40,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="escolherConteudo">
 
-        <span class="titulo">1. Citologia (Biologia Celular)</span>
+        <span class="titulo">2. Genética</span>
         <br>
-        <span class="topico">Membrana plasmática: transporte passivo, ativo e osmose</span>
+        <span class="topico">Leis de Mendel, dominância e herança ligada ao sexo</span>
 
         <br><br>
 
