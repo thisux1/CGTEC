@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzadas e Crises do Feudalismo</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Cruzadas e Crises do Feudalismo</h1>
+
+    <!-- Tópico 1: As Cruzadas -->
+    <p><b>As Cruzadas: Motivações e Impactos</b><br>
+        As Cruzadas foram expedições militares promovidas pela Igreja Católica entre os séculos XI e XIII.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: As Cruzadas visavam reconquistar territórios sagrados e estimularam um intercâmbio cultural e comercial.<br>
+            <b>Resolução:</b> As promessas de indulgências e recompensas atraíram diversas camadas sociais.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Consequências Econômicas e Sociais -->
+    <p><b>Consequências Econômicas e Sociais das Cruzadas</b><br>
+        As Cruzadas estimularam o desenvolvimento do comércio europeu e a formação de uma classe mercantil.
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: Cidades como Veneza e Gênova prosperaram, controlando rotas marítimas e contribuindo para a centralização dos reinos.<br>
+            <b>Resolução:</b> O intercâmbio cultural também alterou padrões de consumo e estilos de vida.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Crise do Feudalismo -->
+    <p><b>Crise do Feudalismo: Contexto e Fatores</b><br>
+        A crise do feudalismo começou a se intensificar no século XIV, afetando a estrutura social e econômica.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: O crescimento do comércio, novas cidades e pandemias como a Peste Negra contribuíram para essa crise.<br>
+            <b>Resolução:</b> A escassez de mão de obra resultou no aumento dos custos de trabalho e desintegração do sistema feudal.
+        </span>
+    </p>
+
+    <!-- Tópico 4: Revoltas Camponesas -->
+    <p><b>Papel das Revoltas Camponesas</b><br>
+        As revoltas camponesas evidenciaram o descontentamento e a fragilidade do sistema feudal.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: Revoltas como a Jacquerie e a Revolta dos Camponeses em Inglaterra mostraram a necessidade de uma nova organização social.<br>
+            <b>Resolução:</b> Essas revoltas contribuíram para o fim do sistema de servidão e o surgimento de uma economia baseada em moeda.
+        </span>
+    </p>
+
+    <!-- Tópico 5: Impactos na Estrutura do Poder -->
+    <p><b>Impactos na Estrutura do Poder e na Sociedade</b><br>
+        A crise do feudalismo e as Cruzadas levaram à centralização do poder nas mãos dos monarcas.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: A formação dos Estados Nacionais e a transição ao sistema capitalista marcaram essa época.<br>
+            <b>Resolução:</b> Esses eventos abriram espaço para o Renascimento, valorizando cultura e ciência.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

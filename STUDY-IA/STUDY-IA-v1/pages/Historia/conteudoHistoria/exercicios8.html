@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandes Navegações</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Grandes Navegações</h1>
+
+    <!-- Tópico 1: Contexto Histórico e Motivações -->
+    <p><b>Contexto Histórico e Motivações</b><br>
+        A partir do século XV, as nações europeias, especialmente Portugal e Espanha, iniciaram um período de intensa
+        exploração marítima.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: As principais motivações foram a busca por rotas comerciais, a expansão do cristianismo e o fortalecimento político.<br>
+            <b>Resolução:</b> Esse período ficou conhecido como as Grandes Navegações.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Avanços Tecnológicos e Navegação -->
+    <p><b>Avanços Tecnológicos e Navegação</b><br>
+        As Grandes Navegações só foram possíveis devido a importantes avanços na tecnologia náutica.
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: Os europeus aprimoraram o uso da bússola e do astrolábio, além de desenvolverem as caravelas.<br>
+            <b>Resolução:</b> Essas inovações permitiram longas expedições oceânicas e melhor orientação em alto-mar.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Explorações Portuguesas -->
+    <p><b>Explorações Portuguesas</b><br>
+        Portugal foi pioneiro nas explorações marítimas sob o patrocínio do Infante D. Henrique.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: Os navegadores portugueses exploraram a costa africana e Vasco da Gama chegou à Índia em 1498.<br>
+            <b>Resolução:</b> Isso fortaleceu o domínio português sobre o comércio de especiarias.
+        </span>
+    </p>
+
+    <!-- Tópico 4: Explorações Espanholas -->
+    <p><b>Explorações Espanholas</b><br>
+        A Espanha iniciou suas explorações com a esperança de encontrar uma rota para as Índias.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: Em 1492, Cristóvão Colombo chegou ao continente americano, acreditando ter encontrado uma nova rota para a Ásia.<br>
+            <b>Resolução:</b> Essa descoberta levou à colonização do Novo Mundo e à exploração de suas riquezas.
+        </span>
+    </p>
+
+    <!-- Tópico 5: Consequências da Expansão Marítima -->
+    <p><b>Consequências da Expansão Marítima e Comercial</b><br>
+        A expansão marítima trouxe inúmeras consequências, incluindo a colonização e a exploração de recursos.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: A colonização e o início do comércio de escravos africanos foram algumas consequências significativas.<br>
+            <b>Resolução:</b> O contato entre europeus e indígenas resultou em profundas transformações culturais e sociais.
+        </span>
+    </p>
+
+    <!-- Tópico 6: Legado das Grandes Navegações -->
+    <p><b>Legado das Grandes Navegações</b><br>
+        As Grandes Navegações estabeleceram as bases para a globalização moderna.
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Resposta: O intercâmbio entre continentes levou ao surgimento de uma economia mundial e ao desenvolvimento do capitalismo.<br>
+            <b>Resolução:</b> Esse período marcou o início da era colonial e teve um impacto duradouro nas relações globais.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

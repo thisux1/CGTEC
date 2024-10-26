@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igreja Católica e sua Influência na Idade Média</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Igreja Católica e sua Influência na Idade Média</h1>
+
+    <!-- Tópico 1: Papel da Igreja -->
+    <p><b>Papel da Igreja</b><br>
+        A Igreja Católica era uma das instituições mais poderosas da Idade Média, influenciando todos os aspectos da vida.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: A Igreja não apenas guiava a espiritualidade das pessoas, mas também tinha poder político e econômico.<br>
+            <b>Resolução:</b> O clero possuía terras e riqueza, e muitas vezes participava ativamente da política local e nacional.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Educação e Cultura -->
+    <p><b>Educação e Cultura</b><br>
+        A Igreja foi responsável pela preservação e transmissão do conhecimento durante a Idade Média.
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: Mosteiros e catedrais eram centros de aprendizado e cultura, onde manuscritos eram copiados e conservados.<br>
+            <b>Resolução:</b> A educação era majoritariamente religiosa, mas também abrangia áreas como filosofia e ciências naturais.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Influência Política -->
+    <p><b>Influência Política</b><br>
+        A Igreja Católica exerceu um papel crucial nas relações de poder entre reis e nobres.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: Os papas frequentemente intervinham em questões políticas e podiam até depor monarcas.<br>
+            <b>Resolução:</b> A excomunhão era uma poderosa ferramenta política que afetava a legitimidade dos governantes.
+        </span>
+    </p>
+
+    <!-- Tópico 4: Missões e Expansão -->
+    <p><b>Missões e Expansão</b><br>
+        A Igreja Católica expandiu sua influência através de missões e conversões durante a Idade Média.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: Missionários viajaram para converter povos pagãos e estabelecer dioceses em regiões remotas.<br>
+            <b>Resolução:</b> Essa expansão contribuiu para a difusão do cristianismo e da cultura ocidental.
+        </span>
+    </p>
+
+    <!-- Tópico 5: Críticas e Reformas -->
+    <p><b>Críticas e Reformas</b><br>
+        Durante a Idade Média, surgiram críticas à Igreja, levando a movimentos de reforma.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: O crescimento da corrupção e a venda de indulgências geraram críticas que culminaram na Reforma Protestante.<br>
+            <b>Resolução:</b> Reformadores como Martinho Lutero questionaram a autoridade papal e a prática de indulgências, resultando em profundas mudanças religiosas.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

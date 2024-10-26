@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforma Protestante e Contrarreforma</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Reforma Protestante e Contrarreforma</h1>
+
+    <!-- Tópico 1: Contexto da Reforma Protestante -->
+    <p><b>Contexto da Reforma Protestante</b><br>
+        A Reforma Protestante foi um movimento religioso iniciado no século XVI que contestou práticas e doutrinas da Igreja Católica.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: Iniciada em 1517 com as 95 Teses de Martinho Lutero, a Reforma levou à criação de novas denominações cristãs.<br>
+            <b>Resolução:</b> Esse movimento causou mudanças profundas na sociedade e na estrutura da Igreja.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Principais Ideias da Reforma -->
+    <p><b>Principais Ideias da Reforma</b><br>
+        Lutero e outros reformadores defendiam princípios como a "Sola Scriptura", "Sola Fide" e "Sola Gratia".
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: Essas ideias promoviam uma interpretação mais direta da fé cristã e a tradução das Escrituras.<br>
+            <b>Resolução:</b> Isso desafiou a hierarquia da Igreja e incentivou o acesso à Bíblia em línguas locais.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Expansão da Reforma -->
+    <p><b>Expansão da Reforma e Suas Consequências</b><br>
+        A Reforma se espalhou rapidamente pela Europa, especialmente em regiões como a Alemanha e a Suíça.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: O apoio de líderes locais gerou conflitos religiosos, como a Guerra dos Trinta Anos.<br>
+            <b>Resolução:</b> Isso fragmentou a unidade religiosa da Europa e contribuiu para a formação de Estados Nacionais.
+        </span>
+    </p>
+
+    <!-- Tópico 4: A Contrarreforma Católica -->
+    <p><b>A Contrarreforma Católica</b><br>
+        Em resposta à Reforma, a Igreja Católica iniciou a Contrarreforma para reafirmar suas doutrinas.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: O Concílio de Trento (1545–1563) reafirmou a doutrina católica e estabeleceu medidas de reforma.<br>
+            <b>Resolução:</b> As ordens religiosas, como os jesuítas, desempenharam papel crucial na educação e na fé católica.
+        </span>
+    </p>
+
+    <!-- Tópico 5: Impactos da Contrarreforma -->
+    <p><b>Impactos da Contrarreforma na Sociedade e na Cultura</b><br>
+        A Contrarreforma revitalizou a Igreja Católica e estimulou o surgimento do Barroco.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: A Igreja incentivou missões para espalhar o catolicismo em todo o mundo e gerou tensões religiosas.<br>
+            <b>Resolução:</b> Essa rivalidade também levou a uma renovação espiritual e cultural significativa.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

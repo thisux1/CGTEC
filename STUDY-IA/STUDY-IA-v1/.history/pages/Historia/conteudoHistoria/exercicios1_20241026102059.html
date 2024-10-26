@@ -1,0 +1,107 @@
+DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civilizações da Mesopotâmia</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Civilizações da Mesopotâmia</h1>
+
+    <!-- Tópico 1: Sumérios -->
+    <p><b>Sumérios</b><br>
+        Os sumérios foram uma das primeiras civilizações da Mesopotâmia, conhecidos por desenvolver a escrita cuneiforme e por suas inovações em agricultura e arquitetura.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: Os sumérios são famosos pela criação da escrita, dos primeiros códigos legais e pela construção de zigurates.<br>
+            <b>Resolução:</b> A civilização suméria se destacou na inventividade, sendo pioneira em várias áreas, como a astronomia e a matemática.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Acadianos -->
+    <p><b>Acadianos</b><br>
+        Os acadianos, liderados por Sargão, unificaram a Mesopotâmia sob o primeiro império conhecido, o Império Acádio.
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: O Império Acádio foi o primeiro império da história e expandiu-se significativamente sob Sargão.<br>
+            <b>Resolução:</b> Os acadianos adotaram muitos aspectos da cultura suméria, mas também contribuíram com suas próprias inovações.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Babilônios -->
+    <p><b>Babilônios</b><br>
+        Os babilônios, conhecidos pelo Código de Hamurabi, avançaram nas leis e na administração do estado.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: O Código de Hamurabi é um dos primeiros conjuntos de leis escritas da história.<br>
+            <b>Resolução:</b> A civilização babilônica teve um papel crucial no desenvolvimento das ciências e da literatura.
+        </span>
+    </p>
+
+    <!-- Tópico 4: Assírios -->
+    <p><b>Assírios</b><br>
+        Os assírios foram conhecidos por sua brutalidade militar e pela construção de uma vasta rede de estradas para facilitar a comunicação e o comércio.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: Os assírios criaram uma das primeiras bibliotecas conhecidas, em Nínive, preservando muitos textos antigos.<br>
+            <b>Resolução:</b> Sua habilidade em estratégia militar e administração foi fundamental para manter seu vasto império.
+        </span>
+    </p>
+
+    <!-- Tópico 5: Caldeus -->
+    <p><b>Caldeus</b><br>
+        Os caldeus, ou babilônios neobabilônicos, são famosos pela restauração de Babilônia e pela construção da famosa Torre de Babel.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: O reinado de Nabucodonosor II é notável pela construção dos Jardins Suspensos, uma das Sete Maravilhas do Mundo Antigo.<br>
+            <b>Resolução:</b> Eles foram conhecidos também por suas contribuições à astronomia e astrologia.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

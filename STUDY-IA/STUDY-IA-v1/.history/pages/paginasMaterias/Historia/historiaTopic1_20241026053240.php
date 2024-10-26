@@ -3,7 +3,7 @@ $message = ""; // Variável para armazenar a mensagem
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['btn1'])) {
-        $message = 'conteudosHistoria/topico1.html'; // Define o caminho do arquivo HTML
+        $message = 'conteudoHistoria/topico1.html'; // Define o caminho do arquivo HTML
     } elseif (isset($_POST['btn2'])) {
         $message = ""; // URL do vídeo do YouTube
     } elseif (isset($_POST['btn3'])) {

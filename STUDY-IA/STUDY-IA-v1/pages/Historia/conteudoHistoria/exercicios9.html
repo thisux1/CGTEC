@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolutismo e Formação dos Estados Nacionais</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Absolutismo e Formação dos Estados Nacionais</h1>
+
+    <!-- Tópico 1: Contexto do Absolutismo -->
+    <p><b>Contexto do Absolutismo</b><br>
+        O absolutismo foi um sistema de governo predominante na Europa entre os séculos XVI e XVIII, caracterizado pela
+        concentração de poder nas mãos de um monarca.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: Os monarcas absolutistas justificavam seu poder através do direito divino, acreditando que eram
+            escolhidos por Deus para governar.<br>
+            <b>Resolução:</b> Esse sistema resultou na diminuição do poder dos nobres e na centralização do governo.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Características do Absolutismo -->
+    <p><b>Características do Absolutismo</b><br>
+        O absolutismo é marcado pela centralização do poder e a ausência de limitações ao poder real.
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: Os reis exerciam controle sobre as leis, a justiça e a administração do Estado.<br>
+            <b>Resolução:</b> A burocracia estatal e um exército permanente foram elementos essenciais para a manutenção do
+            poder absolutista.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Exemplos de Monarquias Absolutistas -->
+    <p><b>Exemplos de Monarquias Absolutistas</b><br>
+        Vários países europeus adotaram o absolutismo em diferentes momentos.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: Exemplos incluem a França sob Luís XIV, a Rússia sob Pedro, o Grande, e a Espanha sob Filipe II.<br>
+            <b>Resolução:</b> Esses monarcas implementaram reformas que consolidaram seu poder e expandiram seus territórios.
+        </span>
+    </p>
+
+    <!-- Tópico 4: Formação dos Estados Nacionais -->
+    <p><b>Formação dos Estados Nacionais</b><br>
+        O processo de formação dos Estados Nacionais ocorreu ao longo dos séculos XVI a XVIII, marcado pela unificação
+        política e territorial.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: A centralização do poder e a afirmação da identidade nacional foram fundamentais para a formação
+            dos Estados Nacionais.<br>
+            <b>Resolução:</b> O fortalecimento do poder real e a redução das autonomias regionais contribuíram para essa
+            unificação.
+        </span>
+    </p>
+
+    <!-- Tópico 5: Efeitos do Absolutismo e Formação dos Estados Nacionais -->
+    <p><b>Efeitos do Absolutismo e Formação dos Estados Nacionais</b><br>
+        O absolutismo teve profundas consequências para a estrutura política e social da Europa.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: A centralização do poder facilitou a administração do Estado, mas também levou a revoltas e
+            resistência por parte dos nobres.<br>
+            <b>Resolução:</b> Esse período preparou o caminho para a modernização dos Estados e para a ascensão do
+            capitalismo.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
