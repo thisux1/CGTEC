@@ -54,7 +54,7 @@ if (file_exists($cssFile)) {
     <header>
         <div class="header-content">
             <div class="content">
-                <a href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/perfil.php">
+                <a href="perfil.php">
                     <?php
                     if (isset($imagemPerfil) && !empty($imagemPerfil) && file_exists(__DIR__ . '/' . $imagemPerfil)) {
                         echo '<img class="imagem1" src="' . htmlspecialchars($imagemPerfil . '?t=' . time()) . '" alt="perfil" onerror="this.src=\'images/fotoPerfil.png\'">';
@@ -65,8 +65,8 @@ if (file_exists($cssFile)) {
                 </a>
             </div>
             <div class="logo-img">
-                <a href="home.php"><img class="logo" src="images/logo2.png" alt="Study IA"></a>
-                <a class="h1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/home.php">Study IA</a>
+                <a href="header.php"><img class="logo" src="images/logo2.png" alt="Study IA"></a>
+                <a class="h1" href="home.html">Study IA</a>
             </div>
 
             <div class="botton-area">

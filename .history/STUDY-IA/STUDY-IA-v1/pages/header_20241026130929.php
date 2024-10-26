@@ -65,8 +65,8 @@ if (file_exists($cssFile)) {
                 </a>
             </div>
             <div class="logo-img">
-                <a href="home.php"><img class="logo" src="images/logo2.png" alt="Study IA"></a>
-                <a class="h1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/home.php">Study IA</a>
+                <a href="header.php"><img class="logo" src="images/logo2.png" alt="Study IA"></a>
+                <a class="h1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/perfil.php">Study IA</a>
             </div>
 
             <div class="botton-area">
