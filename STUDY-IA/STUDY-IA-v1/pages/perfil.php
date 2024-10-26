@@ -15,6 +15,13 @@ if (isset($_SESSION['nomeUsuario']) && isset($_SESSION['IDusuario'])) {
     $stmt->bind_result($imagemPerfil);
     $stmt->fetch();
     $stmt->close();
+
+    // Debug do valor inicial da imagem
+    if (isset($imagemPerfil)) {
+        error_log("Valor de imagemPerfil do banco: " . $imagemPerfil);
+        error_log("Arquivo existe? " . (file_exists(__DIR__ . '/' . $imagemPerfil) ? "Sim" : "Não"));
+        error_log("Caminho completo: " . __DIR__ . '/' . $imagemPerfil);
+    }
 } else {
     echo "Nenhum dado encontrado na sessão.";
     exit();
@@ -23,45 +30,60 @@ if (isset($_SESSION['nomeUsuario']) && isset($_SESSION['IDusuario'])) {
 // Processa o upload da imagem de perfil se o formulário for enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['imagemPerfil'])) {
     // Diretório onde as imagens de perfil serão salvas
-    $diretorioDestino = 'uploads/perfil/';
+    $diretorioDestino = __DIR__ . '/uploads/perfil/';
+    
+    // Log para debug
+    error_log("Tentando fazer upload de imagem");
+    error_log("Diretório destino: " . $diretorioDestino);
+    
+    // Verifica se houve erro no upload
+    if ($_FILES['imagemPerfil']['error'] !== UPLOAD_ERR_OK) {
+        error_log("Erro no upload: " . $_FILES['imagemPerfil']['error']);
+        die("Erro no upload do arquivo");
+    }
     
     // Cria o diretório se ele não existir
     if (!is_dir($diretorioDestino)) {
-        mkdir($diretorioDestino, 0755, true);
+        if (!mkdir($diretorioDestino, 0755, true)) {
+            error_log("Falha ao criar diretório: " . $diretorioDestino);
+            die("Falha ao criar diretório de upload");
+        }
+        error_log("Diretório criado com sucesso");
     }
 
     // Define o nome do arquivo como o ID do usuário + extensão
-    $extensao = pathinfo($_FILES['imagemPerfil']['name'], PATHINFO_EXTENSION);
+    $extensao = strtolower(pathinfo($_FILES['imagemPerfil']['name'], PATHINFO_EXTENSION));
     $imagemNome = $IDusuario . '.' . $extensao;
     $caminhoImagem = $diretorioDestino . $imagemNome;
+    $caminhoRelativo = 'uploads/perfil/' . $imagemNome; // Caminho para salvar no banco
 
+    error_log("Tentando mover arquivo para: " . $caminhoImagem);
+    
     // Verifica se uma imagem anterior existe e a remove
     if (isset($imagemPerfil) && file_exists($imagemPerfil)) {
         unlink($imagemPerfil);
+        error_log("Imagem anterior removida: " . $imagemPerfil);
     }
 
-    // Verifica se o arquivo enviado é uma imagem
-    if (getimagesize($_FILES['imagemPerfil']['tmp_name'])) {
-        if (move_uploaded_file($_FILES['imagemPerfil']['tmp_name'], $caminhoImagem)) {
-            $sql = "UPDATE usuarios SET imagemPerfil = ? WHERE IDusuario = ?";
-            $stmt = $connectDB->prepare($sql);
-            $stmt->bind_param("si", $caminhoImagem, $IDusuario);
-            if ($stmt->execute()) {
-                $imagemPerfil = $caminhoImagem; 
-                $mensagem = "Imagem carregada com sucesso!";
-            }
-            $stmt->close();
+    // Faz o upload da nova imagem para o servidor
+    if (move_uploaded_file($_FILES['imagemPerfil']['tmp_name'], $caminhoImagem)) {
+        error_log("Arquivo movido com sucesso");
+        
+        // Atualiza o banco de dados com o caminho RELATIVO da nova imagem
+        $sql = "UPDATE usuarios SET imagemPerfil = ? WHERE IDusuario = ?";
+        $stmt = $connectDB->prepare($sql);
+        $stmt->bind_param("si", $caminhoRelativo, $IDusuario);
+        if ($stmt->execute()) {
+            error_log("Banco de dados atualizado com sucesso");
+            $imagemPerfil = $caminhoRelativo; 
+        } else {
+            error_log("Erro ao atualizar banco de dados: " . $stmt->error);
         }
+        $stmt->close();
     } else {
-        $mensagem = "Arquivo não é uma imagem.";
+        error_log("Falha ao mover arquivo: " . error_get_last()['message']);
     }
 }
-
-// Define a imagem com cache buster
-$imagemComCacheBuster = isset($imagemPerfil) && file_exists($imagemPerfil) ? $imagemPerfil . "?t=" . time() : 'images/perfil2.png';
-// Armazena o caminho da imagem na sessão
-$_SESSION['imagemPerfil'] = $imagemComCacheBuster; // ou $caminhoImagem se preferir
-
 ?>
 
 <!DOCTYPE html>
@@ -97,34 +119,42 @@ $_SESSION['imagemPerfil'] = $imagemComCacheBuster; // ou $caminhoImagem se prefe
             border: none; /* Sem borda */
             border-radius: 5px; /* Borda arredondada */
             cursor: pointer; /* Muda o cursor para indicar que é clicável */
-            font-family: "FonteNormal", sans-serif  ;
+            font-family: "FonteNormal", sans-serif;
         }
     </style>
 </head>
 <body>
-    <?php include 'header.php'; ?>
-    <center>
-    <div class="boxMeio">
-        <br><br><br>
-        <center><img src="<?php echo $imagemComCacheBuster; ?>" class="imagem2"></center>
+    
+            <?php
+            include'header.php';
+            
+            ?>
 
-        <span class="nomeUsuario"><b><?php echo "$nomeUsuario" ?></b></span>
+    <center>
+    <div class="boxMeio"> <!-- Parte do meio -->
+        <br><br><br>
+        <?php
+        if (isset($imagemPerfil) && !empty($imagemPerfil) && file_exists(__DIR__ . '/' . $imagemPerfil)) {
+            $imagemComCacheBuster = $imagemPerfil . "?t=" . time();
+            error_log("Tentando exibir imagem: " . $imagemComCacheBuster);
+            echo '<center><img src="' . htmlspecialchars($imagemComCacheBuster) . '" class="imagem2" onerror="this.src=\'images/perfil2.png\'"></center>';
+        } else {
+            echo '<center><img src="images/perfil2.png" class="imagem2"></center>';
+        }
+        ?>
+
+        <span class="nomeUsuario"><b><?php echo htmlspecialchars($nomeUsuario); ?></b></span>
 
         <span><a id="links3" href="agenda.php"><b>Agenda</b></a></span>
         <span><a id="links3" href="progressos.php"><b>Progressos</b></a></span>
         <br>
-        
-        <?php if (isset($mensagem)): ?>
-            <p><?php echo $mensagem; ?></p>
-        <?php endif; ?>
-        
+        <!-- Formulário para o upload da imagem de perfil -->
         <form action="perfil.php" method="POST" enctype="multipart/form-data">
             <label for="file-upload" class="botao-upload">Selecionar Foto de Perfil</label>
             <input id="file-upload" type="file" name="imagemPerfil" accept="image/*" />
             <br><br>
             <button type="submit" class="botao-upload">Salvar Foto de Perfil</button>
         </form>
-
     </div>
     </center>
 </body>
