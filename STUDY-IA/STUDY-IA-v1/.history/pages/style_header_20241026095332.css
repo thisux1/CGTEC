@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+header {
+    background: linear-gradient(90deg, #1E90FF, #8A2BE2);
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 8%;
+    border: 4px solid; /* Borda do cabeçalho */
+    border-image-slice: 1; /* Necessário para aplicar gradiente na borda */
+    border-image-source: linear-gradient(90deg, #1E90FF, #8A2BE2); /* Gradiente na borda */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque */
+    transition: border-image-source 0.4s ease, box-shadow 0.4s ease;
+    position: fixed; /* Se torna fixo ao atingir a parte superior */
+    top: 0; /* Fica fixo no topo da viewport */
+}
+header:hover {
+    border-image-source: linear-gradient(90deg, #8A2BE2, #1E90FF); /* Muda o gradiente ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+.logo-img {
+    max-width: 100%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinhamento ao topo */
+    position: relative;
+}
+
+.logo {
+    width: 130px; 
+    height: auto;
+    margin-left:-30px ; 
+    margin-right: -20px;
+    transition: transform ease-in-out 0.3s; 
+}
+.logo:hover{
+    transform: scale(1.1);
+}   
+
+.h1 {
+    font-size: 34pt;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: #dddddd;
+    background-size: 500% 100%;
+    background-position: 300% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 6s, transform 0.3s ease-in-out;
+}
+
+.h1:hover {
+    -webkit-text-fill-color: transparent;
+    background-position: 0 0; 
+    background-image: linear-gradient(to left, blue, purple, blue);
+    transform: scale(1.05);
+}
+.button-area{
+    transition: transform ease-in-out 0.3s;
+    padding: 20px;
+}
+.button-area:hover{
+transform: scale(1.05);
+}
+
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    height: 5vh;
+}
+
+.imagem1 {
+    display: inline-block;
+    width: 65px; 
+    height: 65px;
+    vertical-align: middle;
+    border-radius: 50%; 
+    transition: transform ease-in-out 0.3s; 
+    border: 3px solid #23108c;
+    object-fit: cover; 
+}
+.imagem1:hover {
+    transform: scale(1.05);
+}
+
+.site-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-logo h1 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    flex: 1;
+}
+.sidebar ul li a {
+    font-weight: bold;
+    font-size: larger;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out; /* Adiciona a transição */
+    z-index: 4;
+}
+
+.sidebar ul li a:hover {
+    transform: scale(1.05); /* Aumenta o link em 5% ao passar o mouse */
+}
+
+body {
+    place-items: center;
+    height: 100vh;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+    transition: opacity 1s ease-in-out; 
+    opacity: 1; 
+}
+.overlay.active {
+    display: block; 
+    opacity: 1; 
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px; 
+    height: 100vh; 
+    background: rgb(206, 206, 209); 
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease; 
+    z-index: 2; 
+    border-radius: 15px 0 0 15px;
+    font-family: "Quicksand", sans-serif;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 300px;
+    }
+    .h1{
+        font-size: 20pt;
+        max-width: fit-content;
+    }
+    .imagem1{
+        width: 30px;
+        max-width: fit-content;
+        margin-left: 10px;
+    }
+}
+.sidebar a {
+    font-weight: bold       ;
+}
+
+.sidebar h2 {
+    padding: 20px 0 10px 20px;
+    margin: 0;
+}
+.sidebar a{
+    font-size: larger;
+}
+
+h2{
+    text-align: left;
+    margin-bottom: 0;
+}
+.sidebar ul {
+    list-style: none; 
+    padding: 0; 
+    counter-reset: item; 
+}
+
+.sidebar ul li{
+    position: relative; 
+    padding-left: 40px; 
+}
+ul:not([class]) li:not([class]) a:not([class]){
+    left:-20px;
+}
+.number {
+    list-style: none; 
+    padding: 0;
+    counter-reset: item;
+}
+
+.number li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.number li::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    position: absolute;
+    left: 10px; /* Distância do número até o texto */
+    width: 20px; /* Largura fixa para o número */
+    text-align: center;
+    color: #000000; /* Cor do número */
+    font-size: large; /* Tamanho da fonte */
+    font-weight: 600; /* Espessura do número */
+    top: 0;
+}
+.sidebar a{
+    font-size: large;
+    transition: transform ease-in-out 0.3s; 
+}
+.sidebar a:hover{
+    transform: scale(1.05);
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    position: relative; 
+    line-height: 1.7; 
+}
+.sidebar h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%; 
+    height: 2px; 
+    background: #1E90FF;  
+    transition: transform 0.3s ease; 
+}
+.sidebar h2 {
+    padding: 20px 0 10px 20px;
+    margin: 0;
+    font-size: larger;
+    position: relative;
+    color: #333;
+    transition: transform ease-in-out 0.3s;
+}
+
+/* Adiciona animação no hover */
+.sidebar h2:hover {
+    transform: scale(1.03);
+}
+
+/* Define a linha e alinha à esquerda do texto */
+.sidebar h2::after {
+    content: '';
+    position: absolute;
+    left: 20px; /* Alinhado com o padding */
+    bottom: -2px; 
+    width: 28%; /* Ajuste conforme necessário */
+    height: 2px; 
+    background: #1E90FF; 
+    transform: scaleX(0); 
+    transform-origin: left; /* Define o ponto inicial da animação à esquerda */
+    transition: transform 0.3s ease;
+}
+
+.sidebar h2:hover::after,
+.sidebar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.sidebar ul li a::after {
+    content: ''; 
+    position: absolute; 
+    left: 0;
+    bottom: -2px; 
+    width: 100%; 
+    height: 2px; 
+    background: #1E90FF; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.sidebar h2:hover,
+.sidebar ul li a:hover {
+    transform: scale(1.05);
+}
+.divider {
+    height: 2px;
+    background: linear-gradient(to right, #1E90FF, #8A2BE2); 
+    margin: 10px 10px 20px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+.menu {
+    --s: 50px; /* control the size */
+    --c: rgb(255, 255, 255); /* the color */
+    position: fixed;
+    height: var(--s);
+    aspect-ratio: 1;
+    border: none;
+    padding: 0;
+    border-inline: calc(var(--s)/2) solid #0000; 
+    box-sizing: content-box;
+    --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+           no-repeat content-box border-box;
+    --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+           repeat-y content-box border-box;
+    background: 
+      var(--_g2) left  var(--_p,0px) top,
+      var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+      var(--_g2) right var(--_p,0px) top,
+      var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+    background-size: 
+      20% 80%,
+      40% 100%;
+    position: relative;
+    clip-path: inset(0 25%);
+    -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+    cursor: pointer;
+    transition: 
+      background-position .3s var(--_s,.3s), 
+      clip-path 0s var(--_s,.6s);
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    z-index: 3;
+    transition: transform ease-in-out 0.3s; 
+  }
+  .menu:hover{
+    transform: scale(1.05);
+  }
+  .menu:before,
+  .menu:after {
+    content:"";
+    position: absolute;
+    border-radius: var(--s);
+    inset: 40% 0;
+    background: var(--c);
+    transition: transform .3s calc(.3s - var(--_s,.3s));
+  }
+  
+  .menu:checked {
+    clip-path: inset(0);
+    --_p: calc(-1*var(--s));
+    --_s: 0s;
+  }
+  .menu:checked:before {
+    transform: rotate(45deg);
+  }
+  .menu:checked:after {
+    transform: rotate(-45deg);
+  }
+  .menu:focus-visible {
+    clip-path: none;
+    -webkit-mask: none;
+    border: none;
+    outline: 2px solid var(--c);
+    outline-offset: 5px;
+  }

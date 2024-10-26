@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de uma Força</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Trabalho de uma Força - Exercícios</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um bloco de massa 5 kg é puxado por uma força de 20 N ao longo de uma superfície horizontal por uma distância de 8 metros. O ângulo entre a força e o deslocamento é de 0°. Qual o trabalho realizado pela força?
+        <br><br>
+        a) 80 J<br>
+        b) 100 J<br>
+        c) 160 J<br>
+        d) 200 J<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: c) 160 J
+            <br><br>
+            <b>Resolução:</b> O trabalho é dado por \( W = F \cdot d \cdot \cos(\theta) \). Como o ângulo é 0°, \( \cos(0) = 1 \). Logo, \( W = 20 \times 8 \times 1 = 160 \, J \).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Uma pessoa empurra um carrinho de supermercado com uma força de 50 N ao longo de 10 metros, em uma direção que faz um ângulo de 30° com a horizontal. Qual o trabalho realizado pela força?
+        <br><br>
+        a) 250 J<br>
+        b) 433 J<br>
+        c) 500 J<br>
+        d) 600 J<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 433 J
+            <br><br>
+            <b>Resolução:</b> O trabalho é \( W = F \cdot d \cdot \cos(\theta) = 50 \times 10 \times \cos(30^\circ) = 50 \times 10 \times 0.866 = 433 \, J \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Um trabalhador aplica uma força de 150 N para empurrar uma caixa por uma rampa inclinada, ao longo de 5 metros. O ângulo entre a força e o deslocamento é de 60°. Calcule o trabalho realizado pela força.
+        <br><br>
+        a) 375 J<br>
+        b) 450 J<br>
+        c) 600 J<br>
+        d) 750 J<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: a) 375 J
+            <br><br>
+            <b>Resolução:</b> O trabalho é \( W = F \cdot d \cdot \cos(60^\circ) = 150 \times 5 \times 0.5 = 375 \, J \).
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Se uma força de 100 N é aplicada verticalmente sobre um objeto, mas o objeto se move horizontalmente 2 metros, qual é o trabalho realizado pela força?
+        <br><br>
+        a) 0 J<br>
+        b) 200 J<br>
+        c) 100 J<br>
+        d) 50 J<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 0 J
+            <br><br>
+            <b>Resolução:</b> Como a força é vertical e o deslocamento é horizontal, o ângulo entre eles é de 90°, e \( \cos(90^\circ) = 0 \). Logo, \( W = 0 \, J \).
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Uma força de atrito de 40 N atua contra o movimento de um corpo que se desloca por 15 metros em uma superfície horizontal. Qual é o trabalho realizado pela força de atrito?
+        <br><br>
+        a) -600 J<br>
+        b) -400 J<br>
+        c) -200 J<br>
+        d) 600 J<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: a) -600 J
+            <br><br>
+            <b>Resolução:</b> O atrito realiza trabalho negativo, pois atua na direção oposta ao deslocamento. Portanto, \( W = - F \cdot d = -40 \times 15 = -600 \, J \).
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Um carro de 1000 kg é empurrado por uma força de 300 N ao longo de uma estrada por uma distância de 20 metros. O ângulo entre a força aplicada e o deslocamento é de 45°. Qual o trabalho realizado pela força?
+        <br><br>
+        a) 3000 J<br>
+        b) 4242 J<br>
+        c) 8484 J<br>
+        d) 6000 J<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) 4242 J
+            <br><br>
+            <b>Resolução:</b> \( W = F \cdot d \cdot \cos(45^\circ) = 300 \times 20 \times 0.707 = 4242 \, J \).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um objeto é puxado por uma força de 80 N ao longo de uma superfície, mas não se move. Qual o trabalho realizado pela força?
+        <br><br>
+        a) 80 J<br>
+        b) 0 J<br>
+        c) 160 J<br>
+        d) -80 J<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: b) 0 J
+            <br><br>
+            <b>Resolução:</b> Como não há deslocamento, o trabalho é zero, independentemente da força aplicada.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Uma força de 60 N é aplicada em um ângulo de 90° em relação ao deslocamento de um objeto que se move 10 metros. Qual é o trabalho realizado?
+        <br><br>
+        a) 600 J<br>
+        b) 60 J<br>
+        c) 0 J<br>
+        d) 300 J<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: c) 0 J
+            <br><br>
+            <b>Resolução:</b> Como a força está a 90° do deslocamento, \( \cos(90^\circ) = 0 \), logo o trabalho é zero.
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Uma força constante de 500 N é aplicada a um carro que percorre uma distância de 25 metros na mesma direção da força. Qual o trabalho realizado?
+        <br><br>
+        a) 10000 J<br>
+        b) 12500 J<br>
+        c) 15000 J<br>
+        d) 20000 J<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: b) 12500 J
+            <br><br>
+            <b>Resolução:</b> Como a força e o deslocamento estão na mesma direção, o trabalho é \( W = F \cdot d = 500 \times 25 = 12500 \, J \).
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um guindaste levanta uma carga de 2000 kg a uma altura de 10 metros. Qual o trabalho realizado pela força gravitacional?
+        <br><br>
+        a) -196000 J<br>
+        b) -20000 J<br>
+        c) 196000 J<br>
+        d) 0 J<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: a) -196000 J
+            <br><br>
+            <b>Resolução:</b> O trabalho realizado pela força gravitacional é negativo, pois é oposto ao deslocamento. \( W = - m \cdot g \cdot h = -2000 \times 9.8 \times 10 = -196000 \, J \).
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            const resposta = document.getElementById(`resposta${questao}`);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+
+</html>

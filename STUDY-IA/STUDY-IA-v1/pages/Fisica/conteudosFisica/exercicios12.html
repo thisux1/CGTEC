@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondas Mecânicas - Frequência, Período e Amplitude</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Ondas Mecânicas - Frequência, Período e Amplitude</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Uma onda sonora viaja em um meio com uma frequência de 440 Hz. Qual é o período dessa onda?
+        <br><br>
+        a) 0,00227 s<br>
+        b) 0,005 s<br>
+        c) 0,01 s<br>
+        d) 0,1 s<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: a) 0,00227 s
+            <br><br>
+            <b>Resolução:</b> 
+            O período \( T \) é dado por \( T = \frac{1}{f} \). Assim, \( T = \frac{1}{440} \approx 0,00227 \, s \).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Uma onda tem um período de 0,2 s. Qual é a frequência dessa onda?
+        <br><br>
+        a) 2 Hz<br>
+        b) 5 Hz<br>
+        c) 10 Hz<br>
+        d) 20 Hz<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 5 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            A frequência \( f \) é dada por \( f = \frac{1}{T} \). Assim, \( f = \frac{1}{0,2} = 5 \, Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Uma onda mecânica tem uma amplitude de 0,5 m. Qual é a máxima distância que um ponto na onda se afasta da posição de equilíbrio?
+        <br><br>
+        a) 0,5 m<br>
+        b) 1 m<br>
+        c) 0,25 m<br>
+        d) 0,75 m<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: a) 0,5 m
+            <br><br>
+            <b>Resolução:</b> 
+            A amplitude é a máxima distância da posição de equilíbrio, logo, é 0,5 m.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Uma onda tem uma frequência de 100 Hz e uma velocidade de 340 m/s. Qual é o comprimento de onda?
+        <br><br>
+        a) 1,7 m<br>
+        b) 3,4 m<br>
+        c) 0,34 m<br>
+        d) 0,1 m<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: b) 3,4 m
+            <br><br>
+            <b>Resolução:</b> 
+            O comprimento de onda \( \lambda \) é dado por \( \lambda = \frac{v}{f} \). Assim, \( \lambda = \frac{340}{100} = 3,4 \, m \).
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Se a frequência de uma onda é dobrada, o que acontece com o período dessa onda?
+        <br><br>
+        a) O período dobra.<br>
+        b) O período permanece o mesmo.<br>
+        c) O período é reduzido à metade.<br>
+        d) O período aumenta.<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: c) O período é reduzido à metade.
+            <br><br>
+            <b>Resolução:</b> 
+            Se a frequência dobra, o período, que é o inverso da frequência, é reduzido à metade.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Uma onda possui um comprimento de onda de 2 m e uma frequência de 60 Hz. Qual é a velocidade da onda?
+        <br><br>
+        a) 120 m/s<br>
+        b) 100 m/s<br>
+        c) 60 m/s<br>
+        d) 30 m/s<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: a) 120 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A velocidade da onda \( v \) é dada por \( v = \lambda \cdot f \). Assim, \( v = 2 \cdot 60 = 120 \, m/s \).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Uma onda com amplitude de 1 m viaja em uma corda. O que isso significa em termos de energia?
+        <br><br>
+        a) A onda não transporta energia.<br>
+        b) A energia transportada pela onda é proporcional ao quadrado da amplitude.<br>
+        c) A energia é inversamente proporcional à amplitude.<br>
+        d) A amplitude não afeta a energia.<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: b) A energia transportada pela onda é proporcional ao quadrado da amplitude.
+            <br><br>
+            <b>Resolução:</b> 
+            A energia transportada por uma onda é proporcional ao quadrado da amplitude.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Qual é a frequência de uma onda cujo comprimento de onda é 4 m e que se propaga a uma velocidade de 32 m/s?
+        <br><br>
+        a) 4 Hz<br>
+        b) 8 Hz<br>
+        c) 16 Hz<br>
+        d) 20 Hz<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 8 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            A frequência é dada por \( f = \frac{v}{\lambda} \). Assim, \( f = \frac{32}{4} = 8 \, Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Uma onda com período de 0,1 s tem uma frequência de:
+        <br><br>
+        a) 10 Hz<br>
+        b) 20 Hz<br>
+        c) 50 Hz<br>
+        d) 100 Hz<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: a) 10 Hz
+            <br><br>
+            <b>Resolução:</b> 
+            A frequência é \( f = \frac{1}{T} = \frac{1}{0,1} = 10 \, Hz \).
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Se a amplitude de uma onda aumenta, o que acontece com a sua energia?
+        <br><br>
+        a) A energia diminui.<br>
+        b) A energia permanece a mesma.<br>
+        c) A energia aumenta.<br>
+        d) Não há relação entre amplitude e energia.<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: c) A energia aumenta.
+            <br><br>
+            <b>Resolução:</b> 
+            A energia transportada por uma onda é proporcional ao quadrado da amplitude, portanto, um aumento na amplitude resulta em um aumento na energia.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(num) {
+            var resposta = document.getElementById("resposta" + num);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

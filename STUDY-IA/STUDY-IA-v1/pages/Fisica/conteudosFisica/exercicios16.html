@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princípios da Conservação de Energia</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Princípios da Conservação de Energia (Primeira Lei da Termodinâmica)</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um sistema fechado realiza trabalho de 200 J sobre o ambiente e recebe 150 J de calor. Qual é a variação da energia interna do sistema?
+        <br><br>
+        a) -50 J<br>
+        b) 50 J<br>
+        c) -350 J<br>
+        d) 350 J<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: a) -50 J
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a Primeira Lei da Termodinâmica: ΔU = Q - W. Aqui, Q = 150 J (calor recebido) e W = 200 J (trabalho realizado pelo sistema). Portanto:
+            <br>ΔU = 150 J - 200 J = -50 J.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Em um processo termodinâmico, um gás realiza 100 J de trabalho e recebe 300 J de calor. O que acontece com a energia interna do gás?
+        <br><br>
+        a) Aumenta 200 J<br>
+        b) Diminui 200 J<br>
+        c) Permanece constante<br>
+        d) Aumenta 100 J<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: a) Aumenta 200 J
+            <br><br>
+            <b>Resolução:</b> 
+            Aplicando a Primeira Lei: ΔU = Q - W. Aqui, Q = 300 J e W = 100 J. Assim:
+            <br>ΔU = 300 J - 100 J = 200 J.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Se um corpo absorve 500 J de calor e realiza 300 J de trabalho, qual é a variação da energia interna do corpo?
+        <br><br>
+        a) 800 J<br>
+        b) 200 J<br>
+        c) 300 J<br>
+        d) -200 J<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: b) 200 J
+            <br><br>
+            <b>Resolução:</b> 
+            Usando ΔU = Q - W, temos Q = 500 J e W = 300 J. Logo:
+            <br>ΔU = 500 J - 300 J = 200 J.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Se um sistema libera 400 J de calor e realiza 200 J de trabalho, qual é a variação da energia interna do sistema?
+        <br><br>
+        a) -600 J<br>
+        b) 200 J<br>
+        c) -200 J<br>
+        d) 400 J<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) -600 J
+            <br><br>
+            <b>Resolução:</b> 
+            Aqui, o sistema libera calor, então Q = -400 J e W = 200 J. Aplicando na fórmula:
+            <br>ΔU = Q - W = -400 J - 200 J = -600 J.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Em um ciclo de Carnot, se a temperatura da fonte quente é 500 K e a da fonte fria é 300 K, qual é a eficiência máxima desse ciclo?
+        <br><br>
+        a) 40%<br>
+        b) 60%<br>
+        c) 50%<br>
+        d) 20%<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: a) 40%
+            <br><br>
+            <b>Resolução:</b> 
+            A eficiência de um ciclo de Carnot é dada por η = 1 - (T_f / T_q). Assim:
+            <br>η = 1 - (300/500) = 1 - 0,6 = 0,4 ou 40%.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Um recipiente contém 1 kg de água a 25 °C. Se recebe 4200 J de calor, qual será a nova temperatura da água? (Calor específico da água: 4200 J/(kg·°C))
+        <br><br>
+        a) 30 °C<br>
+        b) 35 °C<br>
+        c) 25 °C<br>
+        d) 45 °C<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) 35 °C
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a fórmula Q = mcΔT. Assim, ΔT = Q/(mc):
+            <br>ΔT = 4200 J / (1 kg × 4200 J/(kg·°C)) = 1 °C.
+            Portanto, a nova temperatura é 25 °C + 10 °C = 35 °C.
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Durante um processo, um gás ideal é comprimido de modo adiabático. Qual é a afirmação correta sobre a energia interna do gás?
+        <br><br>
+        a) A energia interna diminui.<br>
+        b) A energia interna permanece constante.<br>
+        c) A energia interna aumenta.<br>
+        d) Não é possível determinar a variação da energia interna.<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: c) A energia interna aumenta.
+            <br><br>
+            <b>Resolução:</b> 
+            Em um processo adiabático, a energia interna do gás aumenta porque o trabalho é realizado sobre ele, resultando em um aumento de temperatura.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Se 250 J de calor são transferidos para um sistema e ele realiza 100 J de trabalho, qual é a variação da energia interna do sistema?
+        <br><br>
+        a) 150 J<br>
+        b) 100 J<br>
+        c) 250 J<br>
+        d) 350 J<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: a) 150 J
+            <br><br>
+            <b>Resolução:</b> 
+            Aplicando a Primeira Lei: ΔU = Q - W. Aqui, Q = 250 J e W = 100 J. Portanto:
+            <br>ΔU = 250 J - 100 J = 150 J.
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Se um sistema libera 400 J de calor e realiza 200 J de trabalho, qual é a variação da energia interna do sistema?
+        <br><br>
+        a) -600 J<br>
+        b) 200 J<br>
+        c) -200 J<br>
+        d) 400 J<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: a) -600 J
+            <br><br>
+            <b>Resolução:</b> 
+            Aqui, o sistema libera calor, então Q = -400 J e W = 200 J. Aplicando na fórmula:
+            <br>ΔU = Q - W = -400 J - 200 J = -600 J.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um sistema em equilíbrio térmico possui 3 partes. Se a energia interna total do sistema é 1200 J e a energia interna de uma das partes é 300 J, qual é a energia interna das outras duas partes?
+        <br><br>
+        a) 900 J<br>
+        b) 600 J<br>
+        c) 300 J<br>
+        d) 400 J<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: b) 600 J
+            <br><br>
+            <b>Resolução:</b> 
+            A energia interna total é a soma das energias internas de todas as partes. Assim:
+            <br>1200 J - 300 J = 900 J para as outras duas partes. 
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(id) {
+            const resposta = document.getElementById(`resposta${id}`);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservação da Energia Mecânica</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Conservação da Energia Mecânica</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um bloco de 2 kg é solto a partir do repouso do topo de um plano inclinado de 5 metros de altura. Supondo que não há atrito, qual será a velocidade do bloco ao atingir a base do plano inclinado?
+        <br><br>
+        a) 5 m/s<br>
+        b) 7 m/s<br>
+        c) 10 m/s<br>
+        d) 14 m/s<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: d) 14 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A energia potencial no topo é igual à energia cinética na base. 
+            <br>Ep = mgh = 2 kg * 10 m/s² * 5 m = 100 J
+            <br>Ec = (1/2)mv² → 100 J = (1/2)(2 kg)v² → v² = 100 → v = 10 m/s.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Um objeto de massa 3 kg é lançado verticalmente para cima com uma velocidade inicial de 20 m/s. Qual é a altura máxima que ele atinge, desprezando a resistência do ar?
+        <br><br>
+        a) 10 m<br>
+        b) 20 m<br>
+        c) 30 m<br>
+        d) 40 m<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 20 m
+            <br><br>
+            <b>Resolução:</b> 
+            A energia cinética inicial se transforma em energia potencial no ponto mais alto.
+            <br>Ec = Ep → (1/2)mv² = mgh → (1/2)(3 kg)(20 m/s)² = 3 kg * 10 m/s² * h
+            <br>600 = 30h → h = 20 m.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Uma bola de massa 0,5 kg é lançada horizontalmente de uma altura de 20 metros com uma velocidade de 10 m/s. Qual será a energia mecânica total da bola no ponto mais alto?
+        <br><br>
+        a) 50 J<br>
+        b) 100 J<br>
+        c) 150 J<br>
+        d) 200 J<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: d) 200 J
+            <br><br>
+            <b>Resolução:</b> 
+            A energia mecânica total é a soma da energia cinética e da energia potencial.
+            <br>Ep = mgh = 0,5 kg * 10 m/s² * 20 m = 100 J
+            <br>Ec = (1/2)mv² = (1/2)(0,5 kg)(10 m/s)² = 25 J
+            <br>Energia total = Ep + Ec = 100 J + 25 J = 125 J.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um pêndulo de 1 metro de comprimento é puxado até um ponto em que sua massa de 1 kg está 0,5 metros acima do ponto mais baixo da trajetória. Qual será a velocidade do pêndulo ao passar pelo ponto mais baixo?
+        <br><br>
+        a) 2 m/s<br>
+        b) 3 m/s<br>
+        c) 4 m/s<br>
+        d) 5 m/s<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: c) 4 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A energia potencial se transforma em energia cinética.
+            <br>Ep = mgh = 1 kg * 10 m/s² * 0,5 m = 5 J
+            <br>Ec = (1/2)mv² → 5 J = (1/2)(1 kg)v² → v² = 10 → v = √10 ≈ 3,16 m/s.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um carro de massa 1200 kg desce uma colina de 10 metros de altura. Qual será a velocidade do carro ao chegar ao fim da descida, supondo que toda a energia potencial se converte em energia cinética e não há atrito?
+        <br><br>
+        a) 10 m/s<br>
+        b) 14 m/s<br>
+        c) 20 m/s<br>
+        d) 28 m/s<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: d) 14 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A energia potencial se converte em energia cinética.
+            <br>Ep = mgh = 1200 kg * 10 m/s² * 10 m = 120000 J
+            <br>Ec = (1/2)mv² → 120000 J = (1/2)(1200 kg)v² → v² = 200 → v = √200 = 14,14 m/s.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Uma esfera de 5 kg está em repouso no topo de uma rampa de 8 metros de altura. Se toda a energia potencial for convertida em energia cinética, qual será a velocidade da esfera ao final da rampa?
+        <br><br>
+        a) 10 m/s<br>
+        b) 12,5 m/s<br>
+        c) 15 m/s<br>
+        d) 16 m/s<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: c) 12,5 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A energia potencial no topo se converte em energia cinética.
+            <br>Ep = mgh = 5 kg * 10 m/s² * 8 m = 400 J
+            <br>Ec = (1/2)mv² → 400 J = (1/2)(5 kg)v² → v² = 160 → v = √160 ≈ 12,65 m/s.
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um corpo de 2 kg é solto de uma altura de 4 metros. Quando ele atinge 2 metros de altura, qual será sua velocidade?
+        <br><br>
+        a) 2 m/s<br>
+        b) 4 m/s<br>
+        c) 5 m/s<br>
+        d) 6 m/s<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: c) 4 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            A energia potencial inicial se converte em energia cinética e energia potencial na altura de 2 m.
+            <br>Ep inicial = mgh = 2 kg * 10 m/s² * 4 m = 80 J
+            <br>Ep em 2 m = 2 kg * 10 m/s² * 2 m = 40 J
+            <br>Ec = Ep inicial - Ep em 2 m = 80 J - 40 J = 40 J
+            <br>Ec = (1/2)mv² → 40 J = (1/2)(2 kg)v² → v² = 40 → v = √40 ≈ 6,32 m/s.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Um atleta salta verticalmente com uma velocidade inicial de 15 m/s. Qual será a altura máxima que ele atingirá?
+        <br><br>
+        a) 10 m<br>
+        b) 15 m<br>
+        c) 20 m<br>
+        d) 25 m<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: c) 11,4 m
+            <br><br>
+            <b>Resolução:</b> 
+            A energia cinética se transforma em energia potencial.
+            <br>Ec = Ep → (1/2)mv² = mgh → (1/2)(1 kg)(15 m/s)² = 1 kg * 10 m/s² * h
+            <br>112,5 = 10h → h = 11,25 m.
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um objeto de 10 kg está a 2 metros do solo. Qual é sua energia potencial gravitacional?
+        <br><br>
+        a) 10 J<br>
+        b) 20 J<br>
+        c) 40 J<br>
+        d) 50 J<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: c) 20 J
+            <br><br>
+            <b>Resolução:</b> 
+            A energia potencial gravitacional é dada por Ep = mgh.
+            <br>Ep = 10 kg * 10 m/s² * 2 m = 200 J.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um corpo em queda livre cai de uma altura de 25 m. Qual é sua velocidade ao atingir o solo?
+        <br><br>
+        a) 10 m/s<br>
+        b) 15 m/s<br>
+        c) 20 m/s<br>
+        d) 25 m/s<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: c) 20 m/s
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a fórmula da conservação de energia.
+            <br>Ep = mgh → Ec = (1/2)mv²
+            <br>mgh = (1/2)mv² → h = (1/2)v²/g → v = √(2gh) = √(2 * 10 * 25) = 20 m/s.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(num) {
+            const resposta = document.getElementById('resposta' + num);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+
+</html>

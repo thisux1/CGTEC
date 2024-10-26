@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renascimento: Ciência, Arte e Humanismo</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Renascimento: Ciência, Arte e Humanismo</h1>
+
+    <!-- Tópico 1: Ciência no Renascimento -->
+    <p><b>Ciência no Renascimento</b><br>
+        O Renascimento marcou uma nova era de investigação científica, onde a observação e a experimentação ganharam destaque.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: Cientistas como Copérnico, Galileu e Kepler revolucionaram a astronomia, desafiando a visão geocêntrica do universo.<br>
+            <b>Resolução:</b> O método científico começou a ser desenvolvido, estabelecendo as bases para a ciência moderna.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Arte no Renascimento -->
+    <p><b>Arte no Renascimento</b><br>
+        A arte renascentista é caracterizada pelo realismo, perspectiva e temas inspirados na Antiguidade clássica.
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: Artistas como Leonardo da Vinci, Michelangelo e Rafael produziram obras-primas que ainda são admiradas hoje.<br>
+            <b>Resolução:</b> A arte renascentista buscava expressar a beleza humana e a harmonia com a natureza.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Humanismo -->
+    <p><b>Humanismo</b><br>
+        O humanismo renascentista enfatizou o valor e a dignidade do ser humano, focando no estudo das humanidades.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: O humanismo incentivou a redescoberta de textos clássicos e promoveu a educação em línguas e ciências.<br>
+            <b>Resolução:</b> Pensadores como Erasmo e Petrarca foram fundamentais para a propagação do pensamento humanista.
+        </span>
+    </p>
+
+    <!-- Tópico 4: Impactos Sociais e Culturais -->
+    <p><b>Impactos Sociais e Culturais do Renascimento</b><br>
+        O Renascimento trouxe transformações significativas na sociedade, incluindo mudanças nos valores e nas estruturas sociais.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: A valorização do indivíduo e da educação contribuiu para o surgimento de uma nova classe média e a secularização da cultura.<br>
+            <b>Resolução:</b> O Renascimento preparou o terreno para a Reforma Protestante e a Modernidade.
+        </span>
+    </p>
+
+    <!-- Tópico 5: A Revolução Científica -->
+    <p><b>A Revolução Científica</b><br>
+        O Renascimento foi o precursor da Revolução Científica, alterando permanentemente a forma como a ciência era abordada.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: O método científico e a experimentação transformaram a ciência, com impactos duradouros na filosofia e na sociedade.<br>
+            <b>Resolução:</b> O Renascimento estabeleceu um novo padrão de busca pelo conhecimento que continua a influenciar a ciência moderna.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

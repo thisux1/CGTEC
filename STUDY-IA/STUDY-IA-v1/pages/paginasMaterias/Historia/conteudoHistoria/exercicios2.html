@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Formação de Impérios, Cultura Clássica e Civilizações da Mesopotâmia</title>
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Quiz: Formação de Impérios, Cultura Clássica e Civilizações da Mesopotâmia</h1>
+
+    <!-- Pergunta 1 -->
+    <p><b>Pergunta 1</b><br>
+        Qual dos seguintes impérios é conhecido por sua contribuição na construção de estradas e aquedutos que
+        facilitaram a comunicação e o comércio?
+        <br><br>
+        A) Império Persa.<br>
+        B) Império Egípcio.<br>
+        C) Império Romano.<br>
+        D) Império Babilônico.<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta correta: C) Império Romano.
+        </span>
+    </p>
+
+    <!-- Pergunta 2 -->
+    <p><b>Pergunta 2</b><br>
+        Qual filósofo grego é conhecido por fundar a Academia em Atenas?
+        <br><br>
+        A) Aristóteles.<br>
+        B) Platão.<br>
+        C) Sócrates.<br>
+        D) Epicuro.<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta correta: B) Platão.
+        </span>
+    </p>
+
+    <!-- Pergunta 3 -->
+    <p><b>Pergunta 3</b><br>
+        Qual dos seguintes aspectos da cultura greco-romana influenciou fortemente o sistema jurídico moderno?
+        <br><br>
+        A) A escultura clássica.<br>
+        B) A literatura épica.<br>
+        C) O conceito de cidadania e direitos civis.<br>
+        D) A arquitetura de templos.<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta correta: C) O conceito de cidadania e direitos civis.
+        </span>
+    </p>
+
+    <!-- Pergunta 4 -->
+    <p><b>Pergunta 4</b><br>
+        Qual civilização da Mesopotâmia é conhecida por desenvolver a escrita cuneiforme?
+        <br><br>
+        A) Assírios.<br>
+        B) Babilônios.<br>
+        C) Sumérios.<br>
+        D) Hititas.<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta correta: C) Sumérios.
+        </span>
+    </p>
+
+    <!-- Pergunta 5 -->
+    <p><b>Pergunta 5</b><br>
+        Qual império é frequentemente considerado o primeiro império da história?
+        <br><br>
+        A) Império Babilônico.<br>
+        B) Império Assírio.<br>
+        C) Império Persa.<br>
+        D) Império Acádio.<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta correta: D) Império Acádio.
+        </span>
+    </p>
+
+    <!-- Pergunta 6 -->
+    <p><b>Pergunta 6</b><br>
+        A tragédia e a comédia, formas teatrais que se destacaram na Grécia Antiga, eram frequentemente apresentadas em festivais em homenagem a qual deus?
+        <br><br>
+        A) Apolo.<br>
+        B) Dionísio.<br>
+        C) Zeus.<br>
+        D) Atena.<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Resposta correta: B) Dionísio.
+        </span>
+    </p>
+
+    <!-- Pergunta 7 -->
+    <p><b>Pergunta 7</b><br>
+        Qual das seguintes construções é um exemplo clássico da arquitetura romana?
+        <br><br>
+        A) O Panteão.<br>
+        B) O Partenon.<br>
+        C) O Coliseu.<br>
+        D) O Templo de Zeus.<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Resposta correta: C) O Coliseu.
+        </span>
+    </p>
+
+    <!-- Pergunta 8 -->
+    <p><b>Pergunta 8</b><br>
+        Qual era o principal código legal da Babilônia, que estabeleceu princípios de justiça e ordem social?
+        <br><br>
+        A) Código de Hamurabi.<br>
+        B) Lei de Talión.<br>
+        C) Código Civil.<br>
+        D) Leis de Manu.<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Resposta correta: A) Código de Hamurabi.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Potência Mecânica</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios de Potência Mecânica</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um elevador realiza um trabalho de 3000 J para levantar uma carga de 600 kg em 10 segundos. Qual é a potência média do elevador durante esse movimento?
+        <br><br>
+        a) 150 W<br>
+        b) 300 W<br>
+        c) 600 W<br>
+        d) 800 W<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: b) 300 W
+            <br><br>
+            <b>Resolução:</b> 
+            A potência é dada por \( P = \frac{W}{t} \). Assim, temos:
+            <br>
+            \( P = \frac{3000 \, J}{10 \, s} = 300 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Um motor realiza um trabalho de 4000 J em 5 segundos. Qual é a potência do motor?
+        <br><br>
+        a) 500 W<br>
+        b) 800 W<br>
+        c) 1000 W<br>
+        d) 1200 W<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 800 W
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a fórmula \( P = \frac{W}{t} \), temos:
+            <br>
+            \( P = \frac{4000 \, J}{5 \, s} = 800 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Um ciclista realiza um trabalho de 150 J para subir uma ladeira em 3 segundos. Qual é a potência média desenvolvida pelo ciclista?
+        <br><br>
+        a) 30 W<br>
+        b) 50 W<br>
+        c) 70 W<br>
+        d) 80 W<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: b) 50 W
+            <br><br>
+            <b>Resolução:</b> 
+            A potência média é calculada como \( P = \frac{W}{t} \):
+            <br>
+            \( P = \frac{150 \, J}{3 \, s} = 50 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um guindaste levanta uma carga de 2000 kg a uma altura de 10 m em 20 segundos. Qual é a potência média do guindaste? (Considere \( g = 10 \, m/s² \))
+        <br><br>
+        a) 1000 W<br>
+        b) 1500 W<br>
+        c) 2000 W<br>
+        d) 2500 W<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 1000 W
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, calculamos o trabalho:
+            <br>
+            Trabalho \( W = mgh = 2000 \cdot 10 \cdot 10 = 200000 \, J \)
+            <br>
+            Agora, a potência é:
+            <br>
+            \( P = \frac{200000 \, J}{20 \, s} = 10000 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um atleta corre 100 m em 12 segundos. Se o trabalho realizado durante a corrida foi de 2000 J, qual é a potência média do atleta?
+        <br><br>
+        a) 100 W<br>
+        b) 166.67 W<br>
+        c) 200 W<br>
+        d) 250 W<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: b) 166.67 W
+            <br><br>
+            <b>Resolução:</b> 
+            Calculamos a potência como:
+            <br>
+            \( P = \frac{W}{t} = \frac{2000 \, J}{12 \, s} \approx 166.67 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Um motor de carro realiza um trabalho de 6000 J em 15 segundos. Qual é a potência do motor?
+        <br><br>
+        a) 400 W<br>
+        b) 600 W<br>
+        c) 800 W<br>
+        d) 1000 W<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: a) 400 W
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a fórmula da potência:
+            <br>
+            \( P = \frac{6000 \, J}{15 \, s} = 400 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um trabalhador levanta um bloco de 50 kg a uma altura de 2 m em 4 segundos. Qual é a potência média utilizada?
+        <br><br>
+        a) 250 W<br>
+        b) 500 W<br>
+        c) 1000 W<br>
+        d) 2000 W<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: a) 250 W
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, calculamos o trabalho:
+            <br>
+            \( W = mgh = 50 \cdot 10 \cdot 2 = 1000 \, J \)
+            <br>
+            Agora, a potência é:
+            <br>
+            \( P = \frac{1000 \, J}{4 \, s} = 250 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Um atleta levanta 80 kg em um movimento vertical a uma altura de 1,5 m em 3 segundos. Qual é a potência média?
+        <br><br>
+        a) 160 W<br>
+        b) 240 W<br>
+        c) 320 W<br>
+        d) 400 W<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: d) 400 W
+            <br><br>
+            <b>Resolução:</b> 
+            O trabalho realizado é:
+            <br>
+            \( W = mgh = 80 \cdot 10 \cdot 1.5 = 1200 \, J \)
+            <br>
+            Portanto, a potência média é:
+            <br>
+            \( P = \frac{1200 \, J}{3 \, s} = 400 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um motor exerce uma força de 500 N para mover um carro 100 m em 10 segundos. Qual é a potência média do motor?
+        <br><br>
+        a) 500 W<br>
+        b) 1000 W<br>
+        c) 2500 W<br>
+        d) 3000 W<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: b) 1000 W
+            <br><br>
+            <b>Resolução:</b> 
+            O trabalho realizado é:
+            <br>
+            \( W = F \cdot d = 500 \cdot 100 = 50000 \, J \)
+            <br>
+            A potência média é:
+            <br>
+            \( P = \frac{50000 \, J}{10 \, s} = 5000 \, W \).
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um atleta realiza um trabalho de 1000 J em 5 segundos. Qual é a potência média do atleta?
+        <br><br>
+        a) 100 W<br>
+        b) 200 W<br>
+        c) 300 W<br>
+        d) 400 W<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: b) 200 W
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a fórmula:
+            <br>
+            \( P = \frac{W}{t} = \frac{1000 \, J}{5 \, s} = 200 \, W \).
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById("resposta" + questao);
+            if (resposta.style.display === "none" || resposta.style.display === "") {
+                resposta.style.display = "inline";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

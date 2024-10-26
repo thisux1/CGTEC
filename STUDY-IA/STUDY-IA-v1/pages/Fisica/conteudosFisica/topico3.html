@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Posição, Velocidade e Aceleração</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .example {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin: 10px 0;
+        }
+
+        .relation {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gráficos de Posição, Velocidade e Aceleração</h1>
+
+    <div class="container">
+        <h2>1. Gráfico de Posição (x) vs. Tempo (t)</h2>
+        <p>Este gráfico representa a variação da posição de um objeto ao longo do tempo.</p>
+        <p><strong>Reta:</strong> Se a linha no gráfico é uma reta com inclinação constante, isso indica que o objeto está se movendo com <strong>velocidade constante</strong>.</p>
+        <p><strong>Curva:</strong> Se a linha é curva, o objeto está <strong>acelerando</strong> ou <strong>desacelerando</strong>. A concavidade da curva informa se a aceleração é positiva ou negativa.</p>
+        <div class="example">
+            <strong>Exemplo:</strong> Um carro que acelera a partir do repouso terá um gráfico de posição que é uma curva crescente (concava para cima).
+        </div>
+
+        <h2>2. Gráfico de Velocidade (v) vs. Tempo (t)</h2>
+        <p>Indica como a <strong>velocidade</strong> do objeto varia com o tempo.</p>
+        <p><strong>Reta horizontal:</strong> Se a linha é horizontal, o objeto está se movendo com velocidade constante.</p>
+        <p><strong>Reta inclinada:</strong> Indica aceleração. Uma inclinação para cima significa que o objeto está acelerando; para baixo, está desacelerando.</p>
+        <div class="example">
+            <strong>Exemplo:</strong> Um carro que acelera uniformemente terá um gráfico de velocidade com uma reta crescente.
+        </div>
+
+        <h2>3. Gráfico de Aceleração (a) vs. Tempo (t)</h2>
+        <p>Mostra como a <strong>aceleração</strong> varia com o tempo.</p>
+        <p><strong>Reta horizontal:</strong> A aceleração é constante quando o gráfico é uma linha reta horizontal.</p>
+        <p><strong>Linha inclinada:</strong> Indica que a aceleração está mudando, ou seja, o objeto está acelerando de forma não uniforme.</p>
+        <div class="example">
+            <strong>Exemplo:</strong> Um carro com aceleração constante terá um gráfico de aceleração como uma linha reta horizontal.
+        </div>
+
+        <div class="relation">
+            <h2>Relação entre os Gráficos</h2>
+            <p>A <strong>derivada</strong> do gráfico de posição em relação ao tempo dá o gráfico de velocidade.</p>
+            <p>A <strong>derivada</strong> do gráfico de velocidade em relação ao tempo dá o gráfico de aceleração.</p>
+            <p>A <strong>integração</strong> do gráfico de aceleração em relação ao tempo dá o gráfico de velocidade, e a integração da velocidade fornece o gráfico de posição.</p>
+        </div>
+
+        <h2>Exemplos Comuns</h2>
+        <p><strong>Movimento Retilíneo Uniforme (MRU):</strong></p>
+        <ul>
+            <li>Gráfico de posição: reta com inclinação constante.</li>
+            <li>Gráfico de velocidade: reta horizontal.</li>
+            <li>Gráfico de aceleração: linha no zero.</li>
+        </ul>
+
+        <p><strong>Movimento Retilíneo Uniformemente Acelerado (MRUA):</strong></p>
+        <ul>
+            <li>Gráfico de posição: parábola.</li>
+            <li>Gráfico de velocidade: reta inclinada.</li>
+            <li>Gráfico de aceleração: reta horizontal.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

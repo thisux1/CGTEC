@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feudalismo: Estrutura Social, Econômica e Política</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Feudalismo: Estrutura Social, Econômica e Política</h1>
+
+    <!-- Tópico 1: Estrutura Social -->
+    <p><b>Estrutura Social</b><br>
+        A sociedade feudal era estratificada, com o rei no topo, seguido pelos nobres, cavaleiros e, por fim, os camponeses.
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Resposta: Os nobres possuíam terras e protegiam os camponeses, que trabalhavam na agricultura.<br>
+            <b>Resolução:</b> Essa hierarquia social refletia a relação de vassalagem e servidão típica do feudalismo.
+        </span>
+    </p>
+
+    <!-- Tópico 2: Economia -->
+    <p><b>Economia</b><br>
+        A economia feudal era predominantemente agrária, baseada na produção agrícola local e na troca de bens e serviços.
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Resposta: A autossuficiência das vilas e dos feudos era uma característica central, reduzindo a dependência de mercados externos.<br>
+            <b>Resolução:</b> O sistema de manorialismo organizava a produção agrícola e a propriedade da terra.
+        </span>
+    </p>
+
+    <!-- Tópico 3: Política -->
+    <p><b>Política</b><br>
+        A política no feudalismo era descentralizada, com poder local concentrado nas mãos dos senhores feudais.
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Resposta: Os senhores feudais governavam suas terras e tinham autonomia em relação ao rei, o que frequentemente gerava conflitos.<br>
+            <b>Resolução:</b> A relação entre o rei e os nobres era uma negociação de poder e lealdade, muitas vezes mediada por pactos de vassalagem.
+        </span>
+    </p>
+
+    <!-- Tópico 4: Vassalagem -->
+    <p><b>Vassalagem</b><br>
+        O sistema de vassalagem estabelecia laços de fidelidade entre senhores e vassalos, com trocas de serviços e proteção.
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Resposta: Vassalos eram nobres que recebiam terras em troca de lealdade e serviços militares aos seus senhores.<br>
+            <b>Resolução:</b> Esse relacionamento era fundamental para a manutenção do poder feudal e da ordem social.
+        </span>
+    </p>
+
+    <!-- Tópico 5: Declínio do Feudalismo -->
+    <p><b>Declínio do Feudalismo</b><br>
+        O feudalismo começou a declinar com o crescimento das cidades e do comércio, especialmente durante o Renascimento.
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Resposta: A ascensão da burguesia e o fortalecimento dos estados-nação contribuíram para a diminuição do poder feudal.<br>
+            <b>Resolução:</b> Mudanças sociais e econômicas levaram a uma nova ordem política, marcada pela centralização do poder.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById('resposta' + questao);
+            if (resposta.style.display === 'none') {
+                resposta.style.display = 'inline';
+            } else {
+                resposta.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leis de Ohm e Associação de Resistores</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Leis de Ohm e Associação de Resistores</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Qual é a relação entre tensão (V), corrente (I) e resistência (R) na Lei de Ohm?
+        <br><br>
+        a) \( V = I \times R \)<br>
+        b) \( V = R \div I \)<br>
+        c) \( V = I + R \)<br>
+        d) \( V = I - R \)<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: a) \( V = I \times R \)
+            <br><br>
+            <b>Resolução:</b> 
+            A Lei de Ohm estabelece que a tensão (V) em um resistor é igual ao produto da corrente (I) que passa por ele e sua resistência (R).
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Se um resistor de 10 Ω é submetido a uma tensão de 20 V, qual é a corrente que passa por ele?
+        <br><br>
+        a) 2 A<br>
+        b) 0,5 A<br>
+        c) 10 A<br>
+        d) 5 A<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: a) 2 A
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a Lei de Ohm: \( I = \frac{V}{R} \) = \( \frac{20 \text{ V}}{10 \text{ Ω}} = 2 \text{ A} \).
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Em uma associação em série de resistores, a resistência total (R_t) é dada por:
+        <br><br>
+        a) \( R_t = R_1 + R_2 + R_3 \)<br>
+        b) \( R_t = R_1 \times R_2 \times R_3 \)<br>
+        c) \( R_t = R_1 - R_2 - R_3 \)<br>
+        d) \( R_t = R_1 \div R_2 \)<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: a) \( R_t = R_1 + R_2 + R_3 \)
+            <br><br>
+            <b>Resolução:</b> 
+            Na associação em série, a resistência total é a soma das resistências individuais, pois a corrente que passa por cada resistor é a mesma.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Qual é a resistência total (R_t) de três resistores de 4 Ω, 6 Ω e 10 Ω associados em série?
+        <br><br>
+        a) 20 Ω<br>
+        b) 18 Ω<br>
+        c) 10 Ω<br>
+        d) 12 Ω<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) 20 Ω
+            <br><br>
+            <b>Resolução:</b> 
+            \( R_t = 4 Ω + 6 Ω + 10 Ω = 20 Ω \).
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Em uma associação paralela de resistores, como se calcula a resistência total (R_t)?
+        <br><br>
+        a) \( \frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} \)<br>
+        b) \( R_t = R_1 + R_2 + R_3 \)<br>
+        c) \( R_t = R_1 \times R_2 \times R_3 \)<br>
+        d) \( R_t = R_1 - R_2 - R_3 \)<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: a) \( \frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} \)
+            <br><br>
+            <b>Resolução:</b> 
+            Na associação em paralelo, a inversa da resistência total é a soma das inversas das resistências individuais.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Qual é a resistência total (R_t) de dois resistores de 8 Ω e 12 Ω em paralelo?
+        <br><br>
+        a) 4,8 Ω<br>
+        b) 5 Ω<br>
+        c) 6 Ω<br>
+        d) 3,2 Ω<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: a) 4,8 Ω
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a fórmula da resistência em paralelo: \( \frac{1}{R_t} = \frac{1}{8} + \frac{1}{12} \) resulta em \( R_t = 4,8 Ω \).
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Se a tensão em um resistor é de 30 V e a corrente que passa por ele é de 5 A, qual é o valor da resistência?
+        <br><br>
+        a) 6 Ω<br>
+        b) 4 Ω<br>
+        c) 10 Ω<br>
+        d) 8 Ω<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: c) 6 Ω
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a Lei de Ohm: \( R = \frac{V}{I} = \frac{30 \text{ V}}{5 \text{ A}} = 6 \text{ Ω} \).
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Um circuito possui uma fonte de 12 V e dois resistores de 4 Ω e 8 Ω em série. Qual é a corrente total (I) no circuito?
+        <br><br>
+        a) 0,5 A<br>
+        b) 1 A<br>
+        c) 2 A<br>
+        d) 3 A<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 1 A
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiro, calculamos a resistência total: \( R_t = 4 + 8 = 12 \text{ Ω} \). Usando a Lei de Ohm: \( I = \frac{V}{R_t} = \frac{12 \text{ V}}{12 \text{ Ω}} = 1 \text{ A} \).
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Em uma associação mista (um resistor em série com dois em paralelo), como se calcula a resistência total (R_t)?
+        <br><br>
+        a) \( R_t = R_s + R_p \)<br>
+        b) \( R_t = R_s \times R_p \)<br>
+        c) \( R_t = R_s - R_p \)<br>
+        d) \( R_t = R_s \div R_p \)<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: a) \( R_t = R_s + R_p \)
+            <br><br>
+            <b>Resolução:</b> 
+            A resistência total é a soma da resistência do resistor em série (R_s) com a resistência equivalente da associação em paralelo (R_p).
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Se um circuito tem uma resistência total de 6 Ω e é alimentado por uma tensão de 18 V, qual é a corrente que passa pelo circuito?
+        <br><br>
+        a) 3 A<br>
+        b) 2 A<br>
+        c) 4 A<br>
+        d) 1 A<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: a) 3 A
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a Lei de Ohm: \( I = \frac{V}{R} = \frac{18 \text{ V}}{6 \text{ Ω}} = 3 \text{ A} \).
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(num) {
+            const resposta = document.getElementById(`resposta${num}`);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+
+</html>

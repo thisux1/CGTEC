@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios sobre Leis de Newton</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios sobre as Leis de Newton</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Um carro de 1.000 kg é acelerado por uma força constante de 2.000 N. Qual será a aceleração do carro?
+        <br><br>
+        a) 1 m/s²<br>
+        b) 2 m/s²<br>
+        c) 4 m/s²<br>
+        d) 8 m/s²<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: c) 4 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            Pela segunda lei de Newton: F = m·a<br>
+            a = F / m = 2.000 N / 1.000 kg = 2 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Uma força de 50 N é aplicada em um objeto de 5 kg. Qual será a aceleração do objeto?
+        <br><br>
+        a) 5 m/s²<br>
+        b) 10 m/s²<br>
+        c) 15 m/s²<br>
+        d) 25 m/s²<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: b) 10 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            Pela segunda lei de Newton: a = F / m = 50 N / 5 kg = 10 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Se uma força de 300 N acelera um bloco de 60 kg, qual será a aceleração do bloco?
+        <br><br>
+        a) 3 m/s²<br>
+        b) 4 m/s²<br>
+        c) 5 m/s²<br>
+        d) 6 m/s²<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: b) 5 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            F = m·a<br>
+            a = F / m = 300 N / 60 kg = 5 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Um objeto com massa de 10 kg está sendo puxado por uma força de 100 N. Qual é a aceleração desse objeto?
+        <br><br>
+        a) 5 m/s²<br>
+        b) 7 m/s²<br>
+        c) 8 m/s²<br>
+        d) 10 m/s²<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: d) 10 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            F = m·a<br>
+            a = 100 N / 10 kg = 10 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um caminhão com massa de 4.000 kg é acelerado a 2 m/s². Qual é a força resultante que atua sobre ele?
+        <br><br>
+        a) 2.000 N<br>
+        b) 4.000 N<br>
+        c) 6.000 N<br>
+        d) 8.000 N<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: d) 8.000 N
+            <br><br>
+            <b>Resolução:</b> 
+            F = m·a = 4.000 kg × 2 m/s² = 8.000 N.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Uma força de 600 N atua sobre uma massa de 150 kg. Qual é a aceleração produzida?
+        <br><br>
+        a) 2 m/s²<br>
+        b) 3 m/s²<br>
+        c) 4 m/s²<br>
+        d) 5 m/s²<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) 4 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            a = F / m = 600 N / 150 kg = 4 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um corpo de 20 kg é submetido a uma aceleração de 5 m/s². Qual é a força resultante que age sobre o corpo?
+        <br><br>
+        a) 50 N<br>
+        b) 75 N<br>
+        c) 100 N<br>
+        d) 150 N<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: d) 150 N
+            <br><br>
+            <b>Resolução:</b> 
+            F = m·a = 20 kg × 5 m/s² = 150 N.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Uma força de 80 N age sobre um objeto de 4 kg. Qual será a aceleração do objeto?
+        <br><br>
+        a) 15 m/s²<br>
+        b) 20 m/s²<br>
+        c) 25 m/s²<br>
+        d) 30 m/s²<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 20 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            F = m·a<br>
+            a = 80 N / 4 kg = 20 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um caminhão de 2.000 kg está sendo acelerado por uma força de 6.000 N. Qual será a aceleração do caminhão?
+        <br><br>
+        a) 2 m/s²<br>
+        b) 3 m/s²<br>
+        c) 5 m/s²<br>
+        d) 7 m/s²<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: c) 3 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            F = m·a<br>
+            a = 6.000 N / 2.000 kg = 3 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Um bloco de 15 kg é empurrado com uma força de 45 N. Qual será a aceleração desse bloco?
+        <br><br>
+        a) 2 m/s²<br>
+        b) 3 m/s²<br>
+        c) 4 m/s²<br>
+        d) 5 m/s²<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: b) 3 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            F = m·a<br>
+            a = 45 N / 15 kg = 3 m/s².
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById("resposta" + questao);
+            resposta.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

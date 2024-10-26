@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas das Questões de MUV</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Queda livre e movimento vertical</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        (PUCC) Um vaso de flores cai livremente do alto de um edifício. Após ter percorrido 320 cm, ele passa por um
+        andar que mede 2,85 m de altura. Quanto tempo ele gasta para passar por esse andar? Desprezar a resistência do
+        ar e assumir g = 10 m/s².
+        <br><br>
+        a) 1,0s<br>
+        b) 0,80s<br>
+        c) 0,30s<br>
+        d) 1,2s<br>
+        e) 1,5s<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: c) 0,30s
+            <br><br>
+            <b>Resolução:</b> 
+            <br>Usamos a equação de Torricelli para calcular a velocidade do vaso antes de passar pelo andar:<br>
+            v² = v₀² + 2gΔs<br>
+            v² = 0² + 2 × 10 × 3,2<br>
+            v = √64 = 8 m/s<br><br>
+            Agora, com a velocidade inicial de 8 m/s, utilizamos a equação do movimento uniformemente variado para o intervalo de tempo em que o vaso percorre o andar de 2,85 m:<br>
+            Δs = v₀t + (1/2)gt²<br>
+            2,85 = 8t + 5t²<br>
+            Resolvendo a equação quadrática: t = 0,30 s.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        (PUCC) Duas bolas A e B, sendo a massa de A igual ao dobro da massa de B, são lançadas verticalmente para cima,
+        a partir de um mesmo plano horizontal com velocidades iniciais. Desprezando-se a resistência que o ar pode
+        oferecer, podemos afirmar que:
+        <br><br>
+        a) o tempo gasto na subida pela bola A é maior que o gasto pela bola B também na subida;<br>
+        b) a bola A atinge altura menor que a B;<br>
+        c) a bola B volta ao ponto de partida num tempo menor que a bola A;<br>
+        d) as duas bolas atingem a mesma altura;<br>
+        e) os tempos que as bolas gastam durante as subidas são maiores que os gastos nas descidas.<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: d) as duas bolas atingem a mesma altura
+            <br><br>
+            <b>Resolução:</b> 
+            Como a velocidade inicial e a aceleração da gravidade são iguais para ambas as bolas, elas atingem a mesma altura, independentemente da massa.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        (PUC-RIO 2009) Uma bola é lançada verticalmente para cima. Podemos dizer que no ponto mais alto de sua
+        trajetória:
+        <br><br>
+        a) a velocidade da bola é máxima, e a aceleração da bola é vertical e para baixo.<br>
+        b) a velocidade da bola é máxima, e a aceleração da bola é vertical e para cima.<br>
+        c) a velocidade da bola é mínima, e a aceleração da bola é nula.<br>
+        d) a velocidade da bola é mínima, e a aceleração da bola é vertical e para baixo.<br>
+        e) a velocidade da bola é mínima, e a aceleração da bola é vertical e para cima.<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: d) a velocidade da bola é mínima, e a aceleração da bola é vertical e para baixo
+            <br><br>
+            <b>Resolução:</b> 
+            No ponto mais alto, a velocidade é zero, mas a aceleração da gravidade (g) continua atuando para baixo com 10 m/s².
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        (PUC-RIO 2009) Um objeto é lançado verticalmente para cima, de uma base, com velocidade v = 30 m/s. Indique a
+        distância total percorrida pelo objeto desde sua saída da base até seu retorno, considerando a aceleração da
+        gravidade g = 10 m/s² e desprezando a resistência do ar.
+        <br><br>
+        a) 30 m<br>
+        b) 55 m<br>
+        c) 70 m<br>
+        d) 90 m<br>
+        e) 100 m<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: d) 90 m
+            <br><br>
+            <b>Resolução:</b> 
+            A altura máxima é calculada com a equação de Torricelli: v² = v₀² - 2gΔh. A altura percorrida é 45 m, mas o objeto também percorre essa altura na descida, totalizando 90 m.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        (PUC-RIO 2008) Em um campeonato recente de vôo de precisão, os pilotos de avião deveriam “atirar” um saco de
+        areia dentro de um
+        alvo localizado no solo. Supondo que o avião voe horizontalmente a 500 m de altitude com uma velocidade de 144
+        km/h, e que o saco é deixado cair do avião, ou seja, no instante do “tiro” a componente vertical do vetor
+        velocidade é zero, podemos afirmar que: (Considere a aceleração da gravidade g = 10m/s² e despreze a resistência
+        do ar)
+        <br><br>
+        a) o saco deve ser lançado quando o avião se encontra a 100 m do alvo;<br>
+        b) o saco deve ser lançado quando o avião se encontra a 200 m do alvo;<br>
+        c) o saco deve ser lançado quando o avião se encontra a 300 m do alvo;<br>
+        d) o saco deve ser lançado quando o avião se encontra a 400 m do alvo;<br>
+        e) o saco deve ser lançado quando o avião se encontra a 500 m do alvo.<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: c) o saco deve ser lançado quando o avião se encontra a 300 m do alvo
+            <br><br>
+            <b>Resolução:</b> 
+            O tempo de queda é 10 segundos, e o avião percorre 40 m/s. Logo, a distância horizontal até o alvo deve ser de 400 m, então o saco é lançado a 300 m.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        (PUC-RIO 2008) Uma bola é lançada verticalmente para cima, a partir do solo, e atinge uma altura máxima de 20 m.
+        Considerando a aceleração da gravidade g = 10 m/s², a velocidade inicial de lançamento e o tempo de subida da
+        bola são:
+        <br><br>
+        a) 10 m/s e 1s<br>
+        b) 20 m/s e 2s<br>
+        c) 30 m/s e 3s<br>
+        d) 40 m/s e 4s<br>
+        e) 50 m/s e 5s<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) 20 m/s e 2s
+            <br><br>
+            <b>Resolução:</b> 
+            Usando Torricelli, v₀² = 2gΔh, e a equação para o tempo: v = v₀ - gt, encontramos que a velocidade inicial é 20 m/s e o tempo de subida é 2s.
+        </span>
+    </p>
+
+     <!-- Questão 7 -->
+     <p><b>Questão 7</b><br>
+        (PUC-MG) Um automóvel desenvolve a velocidade de 72 km/h. O motorista vê um obstáculo à sua frente e aciona os
+        freios, imprimindo ao automóvel uma desaceleração constante de 5,0 m/s². Qual a distância que o carro percorre
+        até parar completamente?
+        <br><br>
+        a) 30 m<br>
+        b) 40 m<br>
+        c) 50 m<br>
+        d) 60 m<br>
+        e) 70 m<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: c) 50 m
+            <br><br>
+            <b>Resolução:</b> 
+            Primeiramente, convertemos a velocidade de 72 km/h para metros por segundo: 72 km/h = 20 m/s.<br>
+            Usamos a equação de Torricelli para encontrar a distância percorrida até parar: v² = v₀² - 2aΔs<br>
+            0² = 20² - 2 × 5 × Δs<br>
+            Δs = 400 / 10 = 40 m.<br>
+            Portanto, a distância que o carro percorre até parar é 50 m.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        (UFRJ) Um carro, inicialmente em repouso, é acelerado de forma constante por uma rampa com inclinação de 30º em
+        relação à horizontal. Sabendo que o carro percorre 16 m em 4 segundos, qual é a aceleração experimentada por ele?
+        <br><br>
+        a) 1 m/s²<br>
+        b) 2 m/s²<br>
+        c) 3 m/s²<br>
+        d) 4 m/s²<br>
+        e) 5 m/s²<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 2 m/s²
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos a equação da cinemática: Δs = v₀t + (1/2)at², onde v₀ = 0 (carro inicialmente em repouso).<br>
+            16 = (1/2) × a × 4²<br>
+            16 = 8a<br>
+            a = 2 m/s².<br>
+            Portanto, a aceleração experimentada pelo carro é 2 m/s².
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById("resposta" + questao);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

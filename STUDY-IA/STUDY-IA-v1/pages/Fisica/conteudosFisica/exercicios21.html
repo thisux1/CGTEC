@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Força Magnética e Campo Magnético</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: "FonteNormal", sans-serif;
+        }
+
+        b {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .resposta {
+            display: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            width: 15%;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Exercícios sobre Força Magnética e Campo Magnético</h1>
+
+    <!-- Questão 1 -->
+    <p><b>Questão 1</b><br>
+        Uma partícula carregada com carga de 2 C se move com uma velocidade de 5 m/s em uma região onde há um campo
+        magnético uniforme de 0,2 T. Qual é a força magnética experimentada pela partícula se sua velocidade é
+        perpendicular ao campo magnético?
+        <br><br>
+        a) 0,5 N<br>
+        b) 1,0 N<br>
+        c) 2,0 N<br>
+        d) 4,0 N<br>
+        <button onclick="mostrarResposta(1)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta1">
+            Alternativa correta: b) 1,0 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força magnética é dada pela fórmula F = qvB. Como a velocidade é perpendicular ao campo, temos:<br>
+            F = 2 × 5 × 0,2 = 1,0 N.
+        </span>
+    </p>
+
+    <!-- Questão 2 -->
+    <p><b>Questão 2</b><br>
+        Qual é o sentido da força magnética sobre uma partícula carregada negativamente que se move para o leste em um
+        campo magnético que aponta para cima?
+        <br><br>
+        a) Norte<br>
+        b) Sul<br>
+        c) Oeste<br>
+        d) Para baixo<br>
+        <button onclick="mostrarResposta(2)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta2">
+            Alternativa correta: c) Oeste
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a regra da mão esquerda para cargas negativas, com o polegar apontando para o leste (movimento) e os
+            dedos para cima (campo magnético), a palma da mão aponta para o oeste, indicando a direção da força.
+        </span>
+    </p>
+
+    <!-- Questão 3 -->
+    <p><b>Questão 3</b><br>
+        Um fio condutor transporta uma corrente de 10 A e está imerso em um campo magnético de 0,3 T, formando um ângulo
+        de 90° com a direção do campo. Se o comprimento do fio na região do campo magnético é de 0,5 m, qual é a força
+        magnética sobre o fio?
+        <br><br>
+        a) 0,5 N<br>
+        b) 1,0 N<br>
+        c) 1,5 N<br>
+        d) 2,0 N<br>
+        <button onclick="mostrarResposta(3)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta3">
+            Alternativa correta: b) 1,5 N
+            <br><br>
+            <b>Resolução:</b> 
+            A fórmula para a força sobre um fio condutor é F = BILsenθ. Como o ângulo é de 90° (sen90° = 1), temos:<br>
+            F = 0,3 × 10 × 0,5 = 1,5 N.
+        </span>
+    </p>
+
+    <!-- Questão 4 -->
+    <p><b>Questão 4</b><br>
+        Uma partícula de carga positiva se move para a direita em um campo magnético que aponta para dentro da página.
+        Qual é a direção da força magnética sobre a partícula?
+        <br><br>
+        a) Para cima<br>
+        b) Para baixo<br>
+        c) Para dentro da página<br>
+        d) Para fora da página<br>
+        <button onclick="mostrarResposta(4)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta4">
+            Alternativa correta: a) Para cima
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a regra da mão direita para uma partícula carregada positivamente, o polegar aponta para a direita
+            (direção da partícula) e os dedos para dentro da página (campo magnético), a palma aponta para cima, indicando
+            a força.
+        </span>
+    </p>
+
+    <!-- Questão 5 -->
+    <p><b>Questão 5</b><br>
+        Um fio condutor transporta uma corrente de 20 A em uma direção paralela a um campo magnético de 0,4 T. Qual é a
+        força magnética sobre o fio?
+        <br><br>
+        a) 8 N<br>
+        b) 2 N<br>
+        c) 0 N<br>
+        d) 10 N<br>
+        <button onclick="mostrarResposta(5)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta5">
+            Alternativa correta: c) 0 N
+            <br><br>
+            <b>Resolução:</b> 
+            Como a corrente está na mesma direção do campo magnético, o ângulo entre eles é 0°, e a força magnética é dada
+            por F = BILsenθ. Para θ = 0°, sen0° = 0, logo a força é zero.
+        </span>
+    </p>
+
+    <!-- Questão 6 -->
+    <p><b>Questão 6</b><br>
+        Uma partícula de 3 C está se movendo com uma velocidade de 10 m/s em um campo magnético de 0,5 T. Se o ângulo
+        entre a velocidade da partícula e o campo magnético é de 30°, qual é a força magnética sobre a partícula?
+        <br><br>
+        a) 1,5 N<br>
+        b) 3,0 N<br>
+        c) 7,5 N<br>
+        d) 9,0 N<br>
+        <button onclick="mostrarResposta(6)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta6">
+            Alternativa correta: b) 3,0 N
+            <br><br>
+            <b>Resolução:</b> 
+            A força magnética é dada por F = qvBsenθ. Substituindo os valores:<br>
+            F = 3 × 10 × 0,5 × sen30° = 15 × 0,5 = 3,0 N.
+        </span>
+    </p>
+
+    <!-- Questão 7 -->
+    <p><b>Questão 7</b><br>
+        Um campo magnético de 0,2 T exerce uma força magnética de 0,4 N sobre uma partícula que se move
+        perpendicularmente ao campo magnético com uma velocidade de 2 m/s. Qual é o valor da carga da partícula?
+        <br><br>
+        a) 0,1 C<br>
+        b) 0,2 C<br>
+        c) 0,5 C<br>
+        d) 1,0 C<br>
+        <button onclick="mostrarResposta(7)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta7">
+            Alternativa correta: c) 1,0 C
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a fórmula F = qvB, rearranjamos para q = F / vB. Substituindo os valores:<br>
+            q = 0,4 / (2 × 0,2) = 1,0 C.
+        </span>
+    </p>
+
+    <!-- Questão 8 -->
+    <p><b>Questão 8</b><br>
+        Uma corrente de 15 A flui em um fio de 2 m de comprimento que está em um campo magnético uniforme de 0,6 T. Se
+        o fio faz um ângulo de 60° com o campo magnético, qual é a força magnética sobre o fio?
+        <br><br>
+        a) 9 N<br>
+        b) 15 N<br>
+        c) 18 N<br>
+        d) 10 N<br>
+        <button onclick="mostrarResposta(8)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta8">
+            Alternativa correta: b) 15 N
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos F = BILsenθ. Substituindo os valores:<br>
+            F = 0,6 × 15 × 2 × sen60° ≈ 15 N.
+        </span>
+    </p>
+
+    <!-- Questão 9 -->
+    <p><b>Questão 9</b><br>
+        Um elétron se move com uma velocidade de 3 × 10⁶ m/s perpendicularmente a um campo magnético de 0,01 T. Qual é a
+        força magnética sobre o elétron?
+        <br><br>
+        a) 4,8 × 10⁻¹⁴ N<br>
+        b) 1,6 × 10⁻¹⁴ N<br>
+        c) 3,2 × 10⁻¹⁴ N<br>
+        d) 2,4 × 10⁻¹⁴ N<br>
+        <button onclick="mostrarResposta(9)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta9">
+            Alternativa correta: a) 4,8 × 10⁻¹⁴ N
+            <br><br>
+            <b>Resolução:</b> 
+            Usamos F = qvB, onde a carga do elétron é 1,6 × 10⁻¹⁹ C. Substituindo os valores:<br>
+            F = 1,6 × 10⁻¹⁹ × 3 × 10⁶ × 0,01 = 4,8 × 10⁻¹⁴ N.
+        </span>
+    </p>
+
+    <!-- Questão 10 -->
+    <p><b>Questão 10</b><br>
+        Qual é a direção do campo magnético para que uma partícula carregada positivamente, movendo-se para o norte,
+        experimente uma força magnética para cima?
+        <br><br>
+        a) Leste<br>
+        b) Oeste<br>
+        c) Sul<br>
+        d) Norte<br>
+        <button onclick="mostrarResposta(10)">Mostrar Resposta</button>
+        <span class="resposta" id="resposta10">
+            Alternativa correta: a) Leste
+            <br><br>
+            <b>Resolução:</b> 
+            Usando a regra da mão direita, para que a partícula seja desviada para cima, o campo magnético deve estar
+            apontando para o leste.
+        </span>
+    </p>
+
+    <script>
+        function mostrarResposta(questao) {
+            var resposta = document.getElementById("resposta" + questao);
+            resposta.style.display = resposta.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>
