@@ -8,7 +8,7 @@ if (isset($_SESSION['nomeUsuario']) && isset($_SESSION['IDusuario'])) {
     $IDusuario = $_SESSION['IDusuario'];
 
     // Busca o caminho da imagem do perfil do usuário no banco de dados
-    $sql = "SELECT imagemPerfil FROM usuarios WHERE IDusuario = ?";
+    $sql = "SELECT imagemPerfil FROM usuarios WHERE IDusuario = ?"; 
     $stmt = $connectDB->prepare($sql);
     $stmt->bind_param("i", $IDusuario);
     $stmt->execute();
@@ -37,22 +37,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['imagemPerfil'])) {
 
     // Verifica se uma imagem anterior existe e a remove
     if (isset($imagemPerfil) && file_exists($imagemPerfil)) {
-        unlink($imagemPerfil); // Remove a imagem antiga
+        unlink($imagemPerfil);
     }
 
-    // Faz o upload da nova imagem para o servidor
-    if (move_uploaded_file($_FILES['imagemPerfil']['tmp_name'], $caminhoImagem)) {
-        // Atualiza o banco de dados com o caminho da nova imagem
-        $sql = "UPDATE usuarios SET imagemPerfil = ? WHERE IDusuario = ?";
-        $stmt = $connectDB->prepare($sql);
-        $stmt->bind_param("si", $caminhoImagem, $IDusuario);
-        if ($stmt->execute()) {
-            // Atualiza a variável $imagemPerfil para usar a nova imagem
-            $imagemPerfil = $caminhoImagem; 
+    // Verifica se o arquivo enviado é uma imagem
+    if (getimagesize($_FILES['imagemPerfil']['tmp_name'])) {
+        if (move_uploaded_file($_FILES['imagemPerfil']['tmp_name'], $caminhoImagem)) {
+            $sql = "UPDATE usuarios SET imagemPerfil = ? WHERE IDusuario = ?";
+            $stmt = $connectDB->prepare($sql);
+            $stmt->bind_param("si", $caminhoImagem, $IDusuario);
+            if ($stmt->execute()) {
+                $imagemPerfil = $caminhoImagem; 
+                $mensagem = "Imagem carregada com sucesso!";
+            }
+            $stmt->close();
         }
-        $stmt->close();
+    } else {
+        $mensagem = "Arquivo não é uma imagem.";
     }
 }
+
+// Define a imagem com cache buster
+$imagemComCacheBuster = isset($imagemPerfil) && file_exists($imagemPerfil) ? $imagemPerfil . "?t=" . time() : 'images/perfil2.png';
+// Armazena o caminho da imagem na sessão
+$_SESSION['imagemPerfil'] = $imagemComCacheBuster; // ou $caminhoImagem se preferir
+
 ?>
 
 <!DOCTYPE html>
@@ -93,35 +102,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['imagemPerfil'])) {
     </style>
 </head>
 <body>
-    <div class="boxSuperior"> <!-- Parte superior -->
-        <a href="perfil.php"><img src="images/fotoPerfil.png" class="imagem1"></a>
-        <span><a id="links1" href="materias.php">Disciplinas</a></span>
-        <span><a id="links1" href="http://localhost/CGTEC/chatbot-openai/chatbot.html">Peça ajuda a IA</a></span>
-        <span><a id="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/sobreSTUDYIA.php">Sobre o STUDY IA</a></span>
-        <span><a id="links1" href="login.php">Sair</a></span>
-    </div>
-
+    <?php include 'header.php'; ?>
     <center>
-    <div class="boxMeio"> <!-- Parte do meio -->
+    <div class="boxMeio">
         <br><br><br>
-        <?php
-        // Verifica se o usuário já enviou uma imagem de perfil
-        if (isset($imagemPerfil) && !empty($imagemPerfil) && file_exists($imagemPerfil)) {
-            // Adiciona um parâmetro de tempo para evitar cache
-            $imagemComCacheBuster = $imagemPerfil . "?t=" . time();
-            echo '<center><img src="' . $imagemComCacheBuster . '" class="imagem2"></center>';
-        } else {
-            // Se a imagem não existir ou não for válida, exibe a imagem padrão
-            echo '<center><img src="images/perfil2.png" class="imagem2"></center>';
-        }
-        ?>
+        <center><img src="<?php echo $imagemComCacheBuster; ?>" class="imagem2"></center>
 
         <span class="nomeUsuario"><b><?php echo "$nomeUsuario" ?></b></span>
 
         <span><a id="links3" href="agenda.php"><b>Agenda</b></a></span>
-        <span><a id="links3" href=""><b>Progressos</b></a></span>
+        <span><a id="links3" href="progressos.php"><b>Progressos</b></a></span>
         <br>
-        <!-- Formulário para o upload da imagem de perfil -->
+        
+        <?php if (isset($mensagem)): ?>
+            <p><?php echo $mensagem; ?></p>
+        <?php endif; ?>
+        
         <form action="perfil.php" method="POST" enctype="multipart/form-data">
             <label for="file-upload" class="botao-upload">Selecionar Foto de Perfil</label>
             <input id="file-upload" type="file" name="imagemPerfil" accept="image/*" />

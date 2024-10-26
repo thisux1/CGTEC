@@ -69,6 +69,8 @@ h1
     justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
+    font-size: 120%;
+    font-family: sans-serif;
 }
 
 #iconFisica:hover

@@ -27,10 +27,6 @@
     height: 70px;
 }
 
-
-
-
-
 #links1 
 {
     display: inline-block;  
@@ -63,10 +59,77 @@
 {
     display: inline-block;  
     vertical-align: middle;
-    font-size: 500%;
-    font-family: "FonteNormal", sans-serif;
+    font-size: 24pt;
     color: black;
+    font-weight: 700;
     text-align: center;
+    padding-bottom:  20px;
+    font-family: "Quicksand", sans-serif;
     
 }
 
+.boxMeio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adicionado para centralizar os itens horizontalmente */
+    justify-content: center; /* Adicionado para centralizar os itens verticalmente */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center; /* Isso vai centralizar o texto dentro da boxMeio */
+}
+body{
+    background-color: #f1eded;
+}
+#links3{
+    padding: 20px;
+}
+
+        .imagem-perfil {
+            width: 50px; 
+            height: auto; 
+            object-fit: cover; 
+            border-radius: 50%; 
+            border: 3px solid #23108c;
+            margin-bottom: 20px;
+        }
+
+        .botao-upload {
+            padding: 10px 20px;
+            background-image: linear-gradient(to right, #2328bd, #2c1e42);
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .botao-upload:hover {
+            background-image: linear-gradient(to right, #2c1e42, #2328bd);
+        }
+
+        #links3 {
+            text-decoration: none;
+            color: #23108c;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        #links3:hover {
+            text-decoration: underline;
+        }
+
+
+        .mensagem {
+            color: green;
+            margin: 10px 0;
+        }
+
+        /* Estilo para ocultar o texto padrão do input de arquivo */
+        input[type="file"] {
+            display: none; 
+        }

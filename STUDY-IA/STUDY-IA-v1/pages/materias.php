@@ -6,6 +6,7 @@ if (isset($_SESSION['IDusuario']))
 {
     $IDusuario = $_SESSION['IDusuario'];    
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ if (isset($_SESSION['IDusuario']))
 
     <div class="boxSuperior"> <!--Parte superior-->
 
-        <a href="perfil.php"><img src="images/perfil2.png" class="imagem1"></a>
+        <a href="perfil.php"><img src="<?php echo isset($imagemComCacheBuster) ? $imagemComCacheBuster : 'images/fotoPerfil.png'; ?>" class="imagem1" alt="Foto de Perfil"></a>
         <span><a class="links1" href="materias.php" id="link-selecionado">Disciplinas</a></span>
         <span><a class="links1" href="http://localhost/CGTEC/chatbot-openai/chatbot.html">Peça ajuda a IA</a></span>
         <span><a class="links1" href="http://localhost/CGTEC/STUDY-IA/STUDY-IA-v1/pages/sobreSTUDYIA.php">Sobre o STUDY IA</a></span>
